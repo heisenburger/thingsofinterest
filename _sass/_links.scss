@@ -1,0 +1,22 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: $accent-color;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+}
+
+.l-nav {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.l-ft {
+  font-weight: 500;
+}

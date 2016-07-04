@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="cwidth">
+
+      {% include header.html %}
+
+      <main>
+        
+        <div class="cwidth-narrow">
+          {% include pcast.html audio=page.audiosrc %}
+        </div>
+
+        <section class="cwidth-narrow">
+          <h1 class="t-dp">{{ page.index }}. {{ page.title }}</h1>
+
+          {{ content }}
+
+        </section>
+
+        <ul class="episode-list">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">
+                <span class="post-index">{{ post.index }}</span>
+                <span class="post-title">{{ post.title }}</span>
+                <span class="post-date">{{ post.date | date: '%d %B, %Y' }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        
+      </main>
+
+      {% include footer.html %}
+      {% include foot.html %}
+    </div>
+  </body>
+
+</html>

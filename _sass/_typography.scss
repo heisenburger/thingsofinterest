@@ -1,0 +1,27 @@
+.t-cd {
+  font-family: $font-fam-cd;
+  font-weight: 450;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.t-cd-large {
+  font-size: 1.25rem;
+  font-family: $font-fam-cd;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.t-dp {
+  font-size: 3rem;
+  font-family: $font-fam-dp;
+  font-weight: 700;
+  line-height: 1.2em;
+  orphans: 2;
+}
+
+.t-sm-allcaps {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+}

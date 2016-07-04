@@ -1,0 +1,12 @@
+<div class="pcast-player">
+  <div class="pcast-playpause">
+    <button class="pcast-play"><span>Play</span></button>
+    <button class="pcast-pause"><span>Pause</span></button>
+  </div>
+  <div class="pcast-time">
+    <span class="pcast-currenttime pcast-time">00:00</span>
+    <span class="pcast-duration pcast-time">00:00</span>
+  </div>
+  <progress class="pcast-progress" value="0"></progress>
+  <audio src={{ include.audio }}></audio><a class="pcast-download" href={{ include.audio }} download>Download MP3</a>
+</div>
