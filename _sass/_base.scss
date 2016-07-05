@@ -5,6 +5,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font: $font-weight-base #{$font-size-base}/#{$line-height-base} $font-fam-base;
     color: $text-color;

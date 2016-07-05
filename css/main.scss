@@ -29,6 +29,8 @@ $bp-desktopwide:   1440px;
 
 $transition:       0.3s;
 
+$footer-height:    1.25rem;
+
 
 // mobile-first css; with media queries for tablet and desktop
 @mixin query($breakpoint) {

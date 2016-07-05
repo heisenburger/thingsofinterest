@@ -22,12 +22,19 @@
 }
 
 .overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  margin-bottom: -(5*$footer-height);
   z-index: 2;
+  &::after {
+    content: '';
+    display: block;
+    height: $footer-height;
+    padding-bottom: 6rem; // there are magic, find out where they come from
+  }
   * {
     z-index: 3;
   }
@@ -232,7 +239,10 @@ nav {
 }
 
 footer {
+  position: relative;
+  height: $footer-height;
   text-align: center;
+  z-index: 3;
   span {
     margin-bottom: 2em;
   }
