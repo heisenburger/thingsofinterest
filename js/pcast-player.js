@@ -1,5 +1,6 @@
 (function(){
 
+  var underlay = document.getElementById('underlay');
   var pcastPlayers = document.querySelectorAll('.pcast-player');
   var speeds = [ 1, 1.5, 2, 2.5, 3 ]    
   
@@ -48,6 +49,7 @@
       pause.style.display = 'inline-block';
       pause.focus();
       audio.play();
+      underlay.className = "underlay on";
     }, false);
 
     pause.addEventListener('click', function(){
@@ -55,6 +57,7 @@
       play.style.display = 'inline-block';
       play.focus();
       audio.pause();
+      underlay.className = "underlay off";
     }, false);
  
     // rewind.addEventListener('click', function(){

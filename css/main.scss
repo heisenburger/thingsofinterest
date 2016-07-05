@@ -18,12 +18,16 @@ $text-color:       #ffffff;
 $background-color: #41423C;
 $accent-color:     #CD5B75;
 
-$content-width:    960px;
+$content-width:    1000px;
 $content-width-n:  620px;
+
+$mb-margin:        10px;
 
 $bp-tablet:        768px;
 $bp-desktop:       1024px;
 $bp-desktopwide:   1440px;
+
+$transition:       0.3s;
 
 
 // mobile-first css; with media queries for tablet and desktop

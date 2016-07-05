@@ -1,12 +1,14 @@
 <div class="pcast-player">
-  <div class="pcast-playpause">
-    <button class="pcast-play"><span>Play</span></button>
-    <button class="pcast-pause"><span>Pause</span></button>
-  </div>
+  <button class="pcast-button pcast-play p-b" alt="Play">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path id="play" fill="none" stroke="#FFF" stroke-miterlimit="10" d="M9.5 2.02l48.497 28-48.497 28z"/></svg>
+  </button>
+  <button class="pcast-button pcast-pause p-b" alt="Pause">
+    <svg id="pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path id="pause" clip-rule="evenodd" fill="none" stroke="#FFF" stroke-miterlimit="10" d="M35.25 5.02h20v50h-20zM4.25 5.02h20v50h-20z"/></svg>
+  </button>
   <div class="pcast-time">
-    <span class="pcast-currenttime pcast-time">00:00</span>
-    <span class="pcast-duration pcast-time">00:00</span>
+    <span class="pcast-currenttime pcast-time f-left t-cd">00:00</span>
+    <span class="pcast-duration pcast-time f-right t-cd">00:00</span>
   </div>
   <progress class="pcast-progress" value="0"></progress>
-  <audio src={{ include.audio }}></audio><a class="pcast-download" href={{ include.audio }} download>Download MP3</a>
+  <audio src={{ include.audio }}></audio><!-- <a class="pcast-download" href={{ include.audio }} download>Download MP3</a> -->
 </div>

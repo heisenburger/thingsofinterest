@@ -1,11 +1,10 @@
 ---
 layout: episode
-title:  "Artificial Intelligence and Gender"
+title:  "Artificial Intelligence & Gender"
 date:   2016-05-15 00:00:00 +1200
 index: 001
-audiosrc: "http://s3.amazonaws.com/ShopTalk/080_rapidfire_19.mp3"
+audiosrc: ""
+bgsrc: "/images/ai.jpg"
 ---
 
-Here are the shownotes.
-
-These should render as paragraphs.
+For our first ever episode, we discuss what gender means in the seemingly objective world of artificial intelligence.

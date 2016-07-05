@@ -5,8 +5,15 @@ a {
   &:hover {
     color: $accent-color;
     text-decoration: underline;
-    transition: 0.3s;
+    transition: $transition;
+    background-color: rgba(0,0,0,0.1);
   }
+
+  &:focus {
+    outline: 0;
+    color: $accent-color;
+    transition: $transition;
+  }  
 }
 
 .l-nav {
@@ -19,4 +26,8 @@ a {
 
 .l-ft {
   font-weight: 500;
+}
+
+.l-active {
+  font-weight: bold;
 }

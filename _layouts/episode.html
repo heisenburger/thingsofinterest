@@ -4,7 +4,9 @@
   {% include head.html %}
 
   <body>
-    <div class="cwidth">
+    <div id="underlay" class="underlay off" style="background-image:url({{ page.bgsrc }});"></div>
+
+    <div class="overlay">
 
       {% include header.html %}
 
@@ -14,30 +16,21 @@
           {% include pcast.html audio=page.audiosrc %}
         </div>
 
-        <section class="cwidth-narrow">
+        <section class="cwidth-narrow p-b">
           <h1 class="t-dp">{{ page.index }}. {{ page.title }}</h1>
 
           {{ content }}
 
         </section>
 
-        <ul class="episode-list">
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">
-                <span class="post-index">{{ post.index }}</span>
-                <span class="post-title">{{ post.title }}</span>
-                <span class="post-date">{{ post.date | date: '%d %B, %Y' }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+        {% include episode-list.html %}
         
       </main>
 
       {% include footer.html %}
       {% include foot.html %}
     </div>
+
   </body>
 
 </html>

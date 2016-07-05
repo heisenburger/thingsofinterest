@@ -1,67 +1,59 @@
 .pcast-player {
-  
-  // .pcast-player-controls {
-  //   box-sizing: border-box;
-  //   background: transparent;
-  //   color: #fff;
-  //   font-size: 1rem;
-  //   overflow: hidden;
-  //   padding: 0.25rem;
-  // }  
-  
-  // button {
-  //   background: #2a2a2a;
-  //   color: #fff;
-  //   border: 0;
-  //   border-radius: 2px;
-  //   padding: 5px;
-  //   line-height: 22px;
-  //   -webkit-appreance: none;
-  //   min-width: 32px;
-    
-  //   span {
-  //     @extend .visually-hidden;
-  //   }
-  // }
-  
-  // progress {
-  //   height: 13px;
-  //   width: calc(100% - 281px);
-  // -webkit-appearance: none;
-  //    -moz-appearance: none;
-  //         appearance: none;
-  // }
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  @include query($bp-tablet){
+    padding-top: 5rem;
+  }
+}
 
-  // progress[value]::-webkit-progress-bar {
-  //   background-color: #555;
-  //   border-radius: 0;
-  //   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-  // }
-  
-  // progress[value]::-webkit-progress-value  {
-  //   background: #fff; 
-  // }
-  
-  // .pcast-time {
-  //   display: inline-block;
-  //   font-size: 13px;
-  //   padding: 0 5px;
-  //   text-align: center;
-  //   width: 4em;
-  // }
-  
-  // .pcast-speed {
-  //   width: 2.5em;
-  // }
-  
-  // .pcast-download {
-  //   font-size: 12px;
-  //   margin-top: 0.5em;
-  //   display: inline-block;
-  //   color: black;
-  //   &:hover,
-  //   &:focus {
-  //     color: #666;
-  //   }
-  // }
+.pcast-button {
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  @include query($bp-tablet){
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active{
+    position: relative;
+    top: 2px;
+  }
+  &:focus #play, &:focus #pause,
+  &:hover #play, &:hover #pause {
+    // stroke: $accent-color;
+    fill: #fff;
+    transition: 0.7s;
+  }
+}
+
+.pcast-time {
+  @extend %clearfix;
+}
+
+.pcast-progress {
+  height: 1rem;
+  width: 100%;
+  border: 1px solid #fff;
+
+  &:not([value]) {
+    border: #ccc;
+    background-color: #ccc;
+  }
+}
+
+.pcast-progress[value]::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.pcast-progress[value]::-webkit-progress-value {
+  background-color: #fff;
 }

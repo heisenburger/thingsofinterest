@@ -14,11 +14,14 @@
 }
 
 .t-dp {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-family: $font-fam-dp;
   font-weight: 700;
   line-height: 1.2em;
   orphans: 2;
+  @include query($bp-tablet){
+    font-size: 3rem;
+  }
 }
 
 .t-sm-allcaps {

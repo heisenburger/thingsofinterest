@@ -109,3 +109,17 @@ pre {
     width: 1px !important;
     overflow: hidden;
 }
+
+.mb-hide {
+  display: none !important;
+  @include query($bp-tablet){
+    display: inline-block !important;
+  }
+}
+
+.dt-hide {
+  display: inline-block !important;
+  @include query($bp-tablet){
+    display: none !important;
+  }
+}
