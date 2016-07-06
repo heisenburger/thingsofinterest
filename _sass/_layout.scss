@@ -67,6 +67,14 @@
   padding-bottom: 1em;
 }
 
+.clearrule {
+  @extend %clearfix;
+  border: 0;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
 @mixin wrapper($width){
   width: calc(100% - 20px);
   margin: 0 $mb-margin;

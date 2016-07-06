@@ -12,42 +12,21 @@ a {
     outline: 0;
     color: $pink;
     transition: $transition;
-  }  
+  }
+
+  &:active {
+    color: $greyblue;
+  }
 }
 
 .l-nav {
   display: inline-block;
-  // position: relative;
   text-decoration: none;
-  // padding-bottom: 10px;
 
-  // &:after {
-  //   position: absolute;
-  //   top: 2px;
-  //   left: -1px;
-  //   width: 100%;
-  //   height: 0.8em;
-  //   background: #000;
-  //   content: '';
-  //   opacity: 0;
-  //   -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  //   -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-  //   transition: height 0.3s, opacity 0.3s, transform 0.3s;
-  //   -webkit-transform: translateY(-10px);
-  //   -moz-transform: translateY(-10px);
-  //   transform: translateY(-10px);
-  // }
 
   &:hover, &:focus {
     text-decoration: none;
     color: $pink;
-    // &:after{
-    //   height: 0.8em;
-    //   opacity: 1;
-    //   -webkit-transform: translateY(0px);
-    //   -moz-transform: translateY(0px);
-    //   transform: translateY(0px);
-    // }
   }
 
 }
@@ -58,4 +37,17 @@ a {
 
 .l-active {
   font-weight: bold;
+}
+
+.toggle {
+  cursor: pointer;
+  &:before {
+    content: 'See ';
+  }
+}
+.toggle.shownotes-on{
+  color: $greyblue;
+  &:before {
+    content: 'Hide ';
+  }
 }

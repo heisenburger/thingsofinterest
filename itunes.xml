@@ -32,7 +32,7 @@ layout: null
     <item>
       <title>{{ep.title}}</title>
       <itunes:subtitle>{{ep.subtitle}}</itunes:subtitle>
-      <itunes:author>{{ep.author}}</itunes:author>
+      <itunes:author>{% if ep.author %}{{ep.author}}{% else %}{{ site.podcast.Author }}{% endif %}</itunes:author>
       <itunes:summary>{{ep.summary}}</itunes:summary>
       <itunes:image href="{{ep.image}}" />
 
@@ -43,6 +43,8 @@ layout: null
       <pubDate>{{ep.pDate}}</pubDate>
 
       <itunes:duration>{{ep.duration}}</itunes:duration>
+
+      <itunes:explicit>{{ep.explicit}}</itunes:explicit>
 
     </item>
     {% endfor %}
