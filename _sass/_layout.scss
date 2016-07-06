@@ -67,6 +67,10 @@
   padding-bottom: 1em;
 }
 
+.col-50 {
+  width: 50%;
+}
+
 .clearrule {
   @extend %clearfix;
   border: 0;
