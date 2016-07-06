@@ -16,7 +16,8 @@ $spacing-unit:     30px;
 
 $text-color:       #ffffff;
 $background-color: #41423C;
-$accent-color:     #CD5B75;
+$pink:             #CD5B75;
+$greyblue:         #5A7287;
 
 $content-width:    1000px;
 $content-width-n:  620px;
@@ -43,10 +44,10 @@ $footer-height:    1.25rem;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "typography",
-        "pcast-player",
-        "links",
-        "syntax-highlighting"
+  "base",
+  "layout",
+  "typography",
+  "pcast-player",
+  "links",
+  "syntax-highlighting"
 ;

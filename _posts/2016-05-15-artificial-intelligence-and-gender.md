@@ -3,7 +3,7 @@ layout: episode
 title:  "Artificial Intelligence & Gender"
 date:   2016-05-15 00:00:00 +1200
 index: 001
-audiosrc: ""
+audiosrc: "/episodes/toi_ep1_artificial-intelligence-and-gender.mp3"
 bgsrc: "/images/ai.jpg"
 ---
 

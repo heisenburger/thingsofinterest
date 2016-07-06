@@ -13,12 +13,16 @@
   background-color: transparent;
   color: #fff;
   border: none;
+  padding-top: 0.4rem;
+  // border-radius: 2em;
+  // box-shadow: 0 0 2em rgba(0,0,0,0.12);
   @include query($bp-tablet){
     height: 3.75rem;
     width: 3.75rem;
   }
   &:hover{
     cursor: pointer;
+    // background-color: rgba(0,0,0,0.12);
   }
   &:focus {
     outline: none;
@@ -27,11 +31,13 @@
     position: relative;
     top: 2px;
   }
-  &:focus #play, &:focus #pause,
-  &:hover #play, &:hover #pause {
-    // stroke: $accent-color;
+  &:focus #play, &:focus #pause {
     fill: #fff;
-    transition: 0.7s;
+    transition: $transition;
+  }
+  &:hover #play, &:hover #pause {
+    stroke: $pink;
+    transition: $transition;
   }
 }
 

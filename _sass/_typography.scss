@@ -28,3 +28,12 @@
   font-size: 0.875rem;
   letter-spacing: 0.1em;
 }
+
+blockquote {
+  @extend .t-dp;
+  font-size: 2.5rem;
+  padding: 1em 0 0.2em;
+  @include query($bp-tablet){
+    padding-top: 2em;
+  }
+}

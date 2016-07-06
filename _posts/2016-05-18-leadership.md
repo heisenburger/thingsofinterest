@@ -1,9 +1,9 @@
 ---
 layout: episode
-title:  "Leadership"
-date:   2016-05-18 00:00:00 +1200
+title: "Leadership"
+date: 2016-05-18 00:00:00 +1200
 index: 002
-audiosrc: ""
+audiosrc: "/episodes/toi_ep2_leadership.mp3"
 bgsrc: "/images/leadership.jpg"
 ---
 

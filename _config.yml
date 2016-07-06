@@ -1,21 +1,25 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Things of Interest
+email: castinginterest@gmail.com
+description: Two nerds having great chats across the Tasman. Non-feminist topics through a feminist lens.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://thingsofinterest.co" # the base hostname & protocol for your site
+twitter_username: castinginterest
+github_username:  heisenburger
 
 # Build settings
 markdown: kramdown
+
+# Podcast General Settings
+podcastSite: http://thingsofinterest.co
+podcastCoverImg: http://thingsofinterest.co/images/toi-cover.png
+podcastTitle: Things of Interest
+podcastOwner: Serena Chen &amp; Sophia Frentz
+podcastEmail: castinginterest@gmail.com
+category: 
+- Society &amp; Culture
+podcastIsExplicit: "yes"
+
+podcastAuthor: Serena Chen &amp; Sophia Frentz
+podcastDescription: Two nerds having great chats across the Tasman. Non-feminist topics through a feminist lens.
+podcastSubtitle: Non-feminist topics through a feminist lens.

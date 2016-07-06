@@ -27,7 +27,8 @@ layout: null
     </itunes:category>
 
     <itunes:explicit>{{site.podcastIsExplicit}}</itunes:explicit>
-    {% for ep in site.episodes %}
+    
+    {% for ep in site.posts %}
     <item>
       <title>{{ep.title}}</title>
       <itunes:subtitle>{{ep.subtitle}}</itunes:subtitle>
@@ -35,15 +36,16 @@ layout: null
       <itunes:summary>{{ep.summary}}</itunes:summary>
       <itunes:image href="{{ep.image}}" />
 
-      <enclosure url="{{ep.enclosureUrl}}" length="{{ep.enclosureLength}}" type="{{ep.enclosureType}}" />
+      <enclosure url="{{ep.audiosrc}}" length="{{ep.enclosureLength}}" type="audio/mpeg"/>
 
-      <guid>{{ep.guid}}</guid>
+      <guid>{{ep.index}}</guid>
 
-      <pubDate>{{ep.pubDate}}</pubDate>
+      <pubDate>{{ep.pDate}}</pubDate>
 
       <itunes:duration>{{ep.duration}}</itunes:duration>
 
     </item>
     {% endfor %}
+
   </channel>
 </rss>
