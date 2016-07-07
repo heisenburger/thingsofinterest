@@ -7,7 +7,8 @@ audiosrc: "/episodes/toi_ep1_leadership.mp3"
 bgsrc: "/images/leadership.jpg"
 
 subtitle: "What unique challenges do women leaders face, and how can we overcome these? Is it better to simply emulate masculine traits, or subvert society's expectations?"
-summary: "What unique challenges do women leaders face, and how can we overcome these? Is it better to simply emulate masculine traits, or subvert society's expectations? We discuss our own journeys towards learning how to be better leaders. **Trigger warning** for this episode though - there is some mention of sexual assault."
+
+summary: "What unique challenges do women leaders face, and how can we overcome these? Is it better to simply emulate masculine traits, or subvert society's expectations? We discuss our own journeys towards learning how to be better leaders. <br/> **Trigger warning** for this episode - there is some mention of sexual assault."
 
 duration: "14:50" #audio length in min
 length: "45557804" #filesize in byte
@@ -16,7 +17,11 @@ block: "no"
 ---
 {% assign pDate = date_to_rfc822 %}
 
+<section class="summary" markdown="1">
+
 {{ page.summary }}
+
+</section>
 
 {% include toggle-shownotes.html %}
 

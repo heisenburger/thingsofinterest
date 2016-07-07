@@ -7,6 +7,7 @@ audiosrc: "/episodes/toi_ep1_artificial-intelligence-and-gender.mp3"
 bgsrc: "/images/ai.jpg"
 
 subtitle: "For our first ever episode, we discuss what gender means in the seemingly objective world of artificial intelligence."
+
 summary: "For our first ever episode, we explore why some forms of AI are gendered, while some others are not. Is there a pattern here? How do we portray AI in science fiction? How does that relate to how they are seen and made in real life?"
 
 duration: "14:50"
@@ -16,7 +17,11 @@ block: "no"
 ---
 {% assign pDate = date_to_rfc822 %}
 
+<section class="summary" markdown="1">
+
 {{ page.summary }}
+
+</section>
 
 {% include toggle-shownotes.html %}
 

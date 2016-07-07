@@ -39,3 +39,10 @@ blockquote {
     padding-top: 2em;
   }
 }
+
+.summary {
+  strong {
+    text-decoration: underline;
+    color: $pink;
+  }
+}
