@@ -10,7 +10,7 @@ subtitle: "For our first ever episode, we discuss what gender means in the seemi
 
 summary: "For our first ever episode, we explore why some forms of AI are gendered, while some others are not. Is there a pattern here? How do we portray AI in science fiction? How does that relate to how they are seen and made in real life?"
 
-duration: "14:50"
+duration: "30:28"
 length: "45557804"
 explicit: "no"
 block: "no" 
