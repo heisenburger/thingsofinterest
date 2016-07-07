@@ -14,7 +14,7 @@ We’re also both from New Zealand so have beautiful accents that you can put in
 
 Sophia currently lives in Melbourne, where she is undertaking a PhD in clinical genetics, but has never been able to focus on one thing at a time, so does a lot of non-PhD things. She’s a published poet and writer and chronically ill, queer, and addicted to coffee. You can find her on twitter at [@SophiaFrentz](http://twitter.com/SophiaFrentz).
 
-Serena currently lives in Wellington, where she's creating design systems at [BNZ Digital](https://www.bnz.co.nz). She has two degrees in physics, dabbles in everything from hacking to making things pretty, and has lived in Berkeley for a year which makes her officially cultured. She made this website, and is hoping it doesn't break. You can find her on twitter at [@Sereeena](http://twitter.com/Sereeena).
+Serena currently lives in Wellington, where she's creating design systems at [BNZ Digital](https://www.bnz.co.nz). She has two degrees in physics, dabbles in everything from hacking to making things pretty, and has lived in Berkeley for a year which makes her officially cultured. She made this website. You can find her on twitter at [@Sereeena](http://twitter.com/Sereeena).
 
 > Side ~~baes~~ projects.
 
