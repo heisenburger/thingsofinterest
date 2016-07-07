@@ -21,12 +21,11 @@ layout: null
     </itunes:owner>``
 
     <itunes:image href="{{site.podcastCoverImg}}" />
-    {% for c in site.category %}
-    <itunes:category text="{{c}}">
-    </itunes:category>
-    {% endfor %}
 
-    <itunes:explicit>{{site.podcastIsExplicit}}</itunes:explicit>
+    <itunes:category text="Society &amp; Culture">
+    <itunes:category text="Technology" />
+    </itunes:category>
+
     
     {% for ep in site.posts %}
     <item>
