@@ -10,7 +10,7 @@ subtitle: "What unique challenges do women leaders face, and how can we overcome
 
 summary: "What unique challenges do women leaders face, and how can we overcome these? Is it better to simply emulate masculine traits, or subvert society's expectations? We discuss our own journeys towards learning how to be better leaders. **Trigger warning** for this episode - there is some mention of sexual assault."
 
-duration: "30:21" #audio length in min
+duration: "30:20" #audio length in min
 length: "45557804" #filesize in byte
 explicit: "yes"
 block: "no" 
