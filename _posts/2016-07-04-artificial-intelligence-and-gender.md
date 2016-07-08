@@ -2,7 +2,7 @@
 layout: episode
 title: "Artificial Intelligence &amp; Gender"
 date: 2016-07-04 01:00:00 +1200
-index: 001
+index: "001"
 audiosrc: "/episodes/toi_ep1_artificial-intelligence-and-gender.mp3"
 bgsrc: "/images/ai.jpg"
 
@@ -15,7 +15,6 @@ length: "45557804"
 explicit: "no"
 block: "no" 
 ---
-{% assign pDate = date_to_rfc822 %}
 
 <section class="summary" markdown="1">
 

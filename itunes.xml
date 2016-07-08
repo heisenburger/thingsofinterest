@@ -6,6 +6,7 @@ layout: null
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 
   <channel>
+    <atom:link href="{{site.podcastSite}}/itunes.xml" rel="self" type="application/rss+xml" />
     <title>{{site.podcastTitle}}</title>
     <link>{{site.podcastSite}}</link>
     <language>en-us</language>
@@ -18,13 +19,14 @@ layout: null
     <itunes:owner>
       <itunes:name>{{site.podcastOwner}}</itunes:name>
       <itunes:email>{{site.podcastEmail}}</itunes:email>
-    </itunes:owner>``
+    </itunes:owner>
 
     <itunes:image href="{{site.podcastCoverImg}}" />
 
-    <itunes:category text="Society &amp; Culture">
+    <itunes:category text="Society &amp; Culture" />
     <itunes:category text="Technology" />
-    </itunes:category>
+
+    <itunes:explicit>{{site.podcastIsExplicit}}</itunes:explicit>
 
     
     {% for ep in site.posts %}
@@ -33,13 +35,13 @@ layout: null
       <itunes:subtitle>{{ep.subtitle}}</itunes:subtitle>
       <itunes:author>{% if ep.author %}{{ep.author}}{% else %}{{ site.podcast.Author }}{% endif %}</itunes:author>
       <itunes:summary>{{ep.summary}}</itunes:summary>
-      <itunes:image href="{{ep.image}}" />
+      <itunes:image href="{{site.podcastCoverImg}}" />
 
-      <enclosure url="{{ep.audiosrc}}" length="{{ep.enclosureLength}}" type="audio/mpeg"/>
+      <enclosure url="{{site.podcastSite}}{{ep.audiosrc}}" length="{{ep.length}}" type="audio/mpeg"/>
 
-      <guid>{{ep.index}}</guid>
+      <guid isPermaLink="false">ThingsOfInterest-{{ep.index}}</guid>
 
-      <pubDate>{{ep.pDate}}</pubDate>
+      <pubDate>{{ep.date | date_to_rfc822}}</pubDate>
 
       <itunes:duration>{{ep.duration}}</itunes:duration>
 

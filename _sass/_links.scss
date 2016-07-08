@@ -44,7 +44,12 @@ a {
 }
 
 .l-active {
-  font-weight: bold;
+  .post-date, .post-index, .post-title {
+    font-weight: bold;
+  }
+  .post-date, .post-index {
+    letter-spacing: 0.2em;
+  }
 }
 
 .toggle {
