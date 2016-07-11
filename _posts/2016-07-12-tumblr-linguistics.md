@@ -10,8 +10,8 @@ subtitle: "We look into the strange world of Tumblr linguistics, and how young g
 
 summary: "Do your friends berade you for using too many emoji, not making correct sentences, and using memes as replies too often? We look into the strange world of Tumblr linguistics, and how young girls are shaping the next era of language."
 
-duration: "30:28"
-length: "45557804"
+duration: "48:31"
+length: "76426802"
 explicit: "yes"
 block: "no" 
 ---
