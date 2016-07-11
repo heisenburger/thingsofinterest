@@ -21,7 +21,7 @@ block: "no"
 
 </section>
 
-{% include toggle-shownotes.html %}
+<!-- {% include toggle-shownotes.html %}
 
 <section id="shownotes" class="hidden" markdown="1">
 
@@ -37,3 +37,4 @@ block: "no"
 
 
 </section>
+ -->
