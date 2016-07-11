@@ -48,7 +48,7 @@ Cool.
 
 Or do. Actually, we'd love to hear from you. Send in your questions, episode suggestions, and general thoughts to [@castinginterest](http://twitter.com/castinginterest)
 
-Even better: record a voice memo of your question / thought / suggestion / observation / etc and email it through to us at castinginterest@gmail.com. We might even feature it on our show. Winky face.
+Even better: record a voice memo of your question / thought / suggestion / observation / etc and email it through to us at [castinginterest@gmail.com](mailto:castinginterest@gmail.com). We might even feature it on our show. Winky face.
 
 Found a bug on this website? Tell Serena to fix it by logging an issue on the [Git repo](https://github.com/heisenburger/thingsofinterest/issues), and she will promise to only procrastinate for two days at most.
 
