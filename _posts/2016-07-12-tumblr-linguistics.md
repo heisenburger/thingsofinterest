@@ -1,7 +1,7 @@
 ---
 layout: episode
 title: "Tumblr Linguistics"
-date: 2016-07-11 01:00:00 +1200
+date: 2016-07-12 01:00:00 +1200
 index: "003"
 audiosrc: "/episodes/toi_ep3_tumblr-linguistics.mp3"
 bgsrc: "/images/tumblr.gif"
@@ -76,7 +76,7 @@ A warning: Homestuck is long. In June 2012, it was described as ‘[a little und
 
 ## Books:
 Richard Dawkins, “The Selfish Gene” (1976)
-Sometimes I just wish dick dorkins would stay in his lane, this was actually not a bad book.
+Though sometimes (all the time) I wish dick dorkins would stay in his lane, this was actually not a bad book.
 
 
 </section>

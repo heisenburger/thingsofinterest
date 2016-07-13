@@ -25,6 +25,7 @@ layout: null
 
     <itunes:category text="Society &amp; Culture" />
     <itunes:category text="Technology" />
+    <itunes:category text="News &amp; Politics" />
 
     <itunes:explicit>{{site.podcastIsExplicit}}</itunes:explicit>
 
