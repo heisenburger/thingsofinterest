@@ -41,6 +41,7 @@ As two classically easily-distracted sneeple (snake people), we run a lot of pro
 - Her [about me](https://about.me/sophiafrentz) page
 
 </div>
+<hr style="clear:both"/>
 
 Cool.
 

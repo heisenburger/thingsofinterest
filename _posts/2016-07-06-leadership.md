@@ -12,7 +12,7 @@ summary: "What unique challenges do women leaders face, and how can we overcome 
 
 duration: "30:20" #audio length in min
 length: "45557804" #filesize in byte
-explicit: "yes"
+explicit: ""
 block: "no" 
 ---
 
