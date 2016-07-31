@@ -1,10 +1,10 @@
 ---
 layout: episode
-title: "Talking about Sexism"
-date: 2016-08-02 01:00:00 +1200
-index: "005"
-audiosrc: "/episodes/toi_ep5_talking_about_sexism.mp3"
-bgsrc: "/images/lisa-bart.jpg"
+title: "Modern Dating"
+date: 2016-08-09 01:00:00 +1200
+index: "006"
+audiosrc: "/episodes/toi_ep6_modern_dating.mp3"
+bgsrc: "/images/"
 
 subtitle: ""
 
