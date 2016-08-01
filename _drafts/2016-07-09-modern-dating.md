@@ -3,7 +3,7 @@ layout: episode
 title: "Modern Dating"
 date: 2016-08-09 01:00:00 +1200
 index: "006"
-audiosrc: "/episodes/toi_ep6_modern_dating.mp3"
+audiosrc: "/episodes/toi_ep6_modern-dating.mp3"
 bgsrc: "/images/"
 
 subtitle: ""
