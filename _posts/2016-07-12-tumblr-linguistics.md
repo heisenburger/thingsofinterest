@@ -6,6 +6,8 @@ index: "003"
 audiosrc: "/episodes/toi_ep3_tumblr-linguistics.mp3"
 bgsrc: "/images/tumblr.gif"
 
+permalink: /episodes/tumblr-linguistics/
+
 subtitle: "We look into the strange world of Tumblr linguistics, and how young girls are shaping the next era of language."
 
 summary: "Do your friends berade you for using too many emoji, not making correct sentences, and using memes as replies too often? We look into the strange world of Tumblr linguistics, and how young girls are shaping the next era of language."

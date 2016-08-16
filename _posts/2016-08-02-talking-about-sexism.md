@@ -6,6 +6,8 @@ index: "005"
 audiosrc: "/episodes/toi_ep5_how-to-talk-about-sexism.mp3"
 bgsrc: "/images/lisa-bart.jpg"
 
+permalink: /episodes/talking-about-sexism/
+
 subtitle: "You want to call out a bad joke, but you don't want to be *that person*. How do we talk about social topics without putting people on the defensive?"
 
 summary: "You want to call out a bad joke, but you don't want to be *that person*. How do we talk about social topics without putting people on the defensive?"

@@ -6,6 +6,8 @@ index: "006"
 audiosrc: "/episodes/toi_ep6_modern-dating.mp3"
 bgsrc: "/images/rumine.jpg"
 
+permalink: /episodes/modern-dating/
+
 subtitle: "Relationships can look many different ways, it’s increasingly legal to not be straight, and basically nobody says the word “spinster” anymore. How great is that? Also: Tinder, Bumble, and the unexpected downsides to our communication technologies."
 
 summary: "Episode six: Where we talk about dating, relationships, and the internet, and Sophia’s life as a long-term single lady can finally be useful rather than a source of angst. Relationships can look many different ways, it’s increasingly legal to not be straight, and basically nobody says the word “spinster” anymore. How great is that?"
