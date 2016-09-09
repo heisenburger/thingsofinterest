@@ -27,7 +27,7 @@ As two classically easily-distracted sneeple (snake people), we run a lot of pro
 - She [writes about stuff](https://medium.com/@Sereeena)
 - And [talks](https://www.youtube.com/watch?v=xWpQDCPc_8E) [about](https://speakerdeck.com/heisenburger/intro-to-design-and-ux-the-good-bits) [stuff](https://medium.com/hvngry-magazine/feminism-is-a-ramp-96796a63c5c7)
 - She wrote a [thesis about BECs](https://issuu.com/heisenburger/docs/thesis/7)
-- Her [personal website](http://serena.ws)
+- Her [personal website](http://serena.nz)
 
 </div>
 
