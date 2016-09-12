@@ -186,10 +186,14 @@ nav {
   }
 }
 
+.singleline {
+  max-height: 2rem;
+}
+
 .post-index {
   width: 15%;
   @include query($bp-tablet){
-    width: 10%;
+    width: 9%;
   }
   @include query($bp-desktop){
     width: 60px;
@@ -199,10 +203,10 @@ nav {
 .post-date {
   width: 100%;
   @include query($bp-tablet){
-    width: 25%;
+    width: 26%;
   }
   @include query($bp-desktop){
-    width: 140px;
+    width: 180px;
   }
 }
 
