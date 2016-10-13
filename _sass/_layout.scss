@@ -161,7 +161,7 @@ nav {
   @include query($bp-tablet){
     width: 50%;
   }
-  &:hover #toilogo {
+  &:hover .toilogo {
     stroke: $pink;
     transition: $transition;
   }
