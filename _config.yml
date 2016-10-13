@@ -9,6 +9,9 @@ github_username:  heisenburger
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Podcast General Settings
 podcastSite: http://www.thingsofinterest.co
