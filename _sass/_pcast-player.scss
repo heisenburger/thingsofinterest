@@ -31,11 +31,11 @@
     position: relative;
     top: 2px;
   }
-  &:focus #play, &:focus #pause {
-    fill: #fff;
+  &:focus .pcast-button-svg {
+    fill: $pink;
     transition: $transition;
   }
-  &:hover #play, &:hover #pause {
+  &:hover .pcast-button-svg {
     stroke: $pink;
     transition: $transition;
   }
@@ -51,8 +51,8 @@
   border: 1px solid #fff;
 
   &:not([value]) {
-    border: rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.1);
+    border: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 

@@ -9,8 +9,8 @@ a {
   }
 
   &:focus {
-    outline: 0;
-    color: $pink;
+    outline: 4px solid $pink;
+    color: inherit;
     transition: $transition;
   }
 

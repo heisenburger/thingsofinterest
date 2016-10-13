@@ -247,12 +247,12 @@ nav {
     height: 3em;
     // @extend %clearfix;
     &:hover, {
-      color: #fff;
-      background-color: rgba(0,0,0,0.12);
+      color: #ffffff;
+      background-color: rgba(0,0,0,0.1);
       text-decoration: none;
     }
     &:focus {
-      background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,0.2);
     }
   }
   .post-date {
