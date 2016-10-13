@@ -1,7 +1,7 @@
 ---
 layout: episode
 title: "Silos and Political Extremism"
-date: 2016-10-11 01:00:00 +1200
+date: 2016-11-11 01:00:00 +1200
 index: "010"
 audiosrc: "/episodes/toi_ep10_silos.mp3"
 bgsrc: "/images/fainting.jpg"
