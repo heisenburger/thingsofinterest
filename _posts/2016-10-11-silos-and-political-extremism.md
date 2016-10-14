@@ -8,9 +8,9 @@ bgsrc: "/images/fire.gif"
 
 permalink: /episodes/silos-and-political-extremism/
 
-subtitle: ""
+subtitle: "Does how we consume news make us more open-minded, or less? Is political extremism on the rise internationally? How do we tackle extremist views? Is it even worth tackling at all? This episode was a fascinating discussion on the intersection of media and politics, we hope you enjoy it as much as we did."
 
-summary: ""
+summary: "Does how we consume news make us more open-minded, or less? Is political extremism on the rise internationally? How do we tackle extremist views? Is it even worth tackling at all? This episode was a fascinating discussion on the intersection of media and politics, we hope you enjoy it as much as we did."
 
 duration: "01:01:05"
 length: "26088380"
