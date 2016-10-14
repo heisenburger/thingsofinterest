@@ -1,10 +1,10 @@
 ---
 layout: episode
 title: "Silos and Political Extremism"
-date: 2016-11-11 01:00:00 +1200
+date: 2016-10-11 01:00:00 +1200
 index: "010"
-audiosrc: "/episodes/toi_ep10_silos.mp3"
-bgsrc: "/images/fainting.jpg"
+audiosrc: "/episodes/toi_ep10_silos-and-political-extremism.mp3"
+bgsrc: "/images/fire.gif"
 
 permalink: /episodes/silos-and-political-extremism/
 
@@ -12,8 +12,8 @@ subtitle: ""
 
 summary: ""
 
-duration: ""
-length: ""
+duration: "01:01:05"
+length: "26088380"
 explicit: "no"
 block: "no" 
 ---
