@@ -11,7 +11,7 @@
   height: 3rem;
   width: 3rem;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding-top: 0.4rem;
   // border-radius: 2em;
@@ -48,7 +48,7 @@
 .pcast-progress {
   height: 1rem;
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 
   &:not([value]) {
     border: rgba(0, 0, 0, 0.1);
@@ -61,5 +61,5 @@
 }
 
 .pcast-progress[value]::-webkit-progress-value {
-  background-color: #fff;
+  background-color: #ffffff;
 }
