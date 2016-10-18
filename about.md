@@ -47,7 +47,7 @@ Cool.
 
 > Don't @ me bro.
 
-Or do. Actually, we'd love to hear from you. Send in your questions, episode suggestions, and general thoughts to [@castinginterest](http://twitter.com/castinginterest)
+Or do. Actually, we'd love to hear from you. Send in your questions, episode suggestions, and general thoughts to [@castinginterest](http://twitter.com/castinginterest). We also have a [facebook page](https://facebook.com/castinginterest), which you should totally follow for related links (usually in the form of comics, let's be honest).
 
 Even better: record a voice memo of your question / thought / suggestion / observation / etc and email it through to us at [castinginterest@gmail.com](mailto:castinginterest@gmail.com). We might even feature it on our show. Winky face.
 
