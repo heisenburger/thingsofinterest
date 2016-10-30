@@ -35,6 +35,7 @@ As two classically easily-distracted sneeple (snake people), we run a lot of pro
 ### Sophia
 
 - Her [blog](http://causativecorrelation.wordpress.com/)
+- Her [book](https://www.newsouthbooks.com.au/books/best-australian-science-writing-2016/) (!!! That's right, she is a bona fide published author!)
 - [Collection of media](https://causativecorrelation.wordpress.com/other-media/) she's been in
 - [A writeup about her most wonderful scientific haikus](http://www.laweekly.com/arts/a-haiku-meet-up-where-poets-try-to-explain-the-world-in-three-lines-4183872)
 - [Her PhD project](http://www.amdf.org.au/amdf-phd-scholarship-sophia-frentz/)
