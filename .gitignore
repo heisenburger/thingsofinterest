@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 *.psd
 *.ai
+*.DS_Store

@@ -2,7 +2,7 @@
 title: Things of Interest
 email: castinginterest@gmail.com
 description: "Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, modern dating, the job market, and fandom? Probably no-one."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "http://www.thingsofinterest.co"
 twitter_username: castinginterest
 github_username:  heisenburger
@@ -15,7 +15,7 @@ sass:
 
 # Podcast General Settings
 podcastSite: http://www.thingsofinterest.co
-podcastCoverImg: http://www.thingsofinterest.co/images/toi-cover2.png
+podcastCoverImg: http://www.thingsofinterest.co/images/toi-cover3.png
 podcastTitle: Things of Interest
 podcastOwner: "Serena Chen &amp; Sophia Frentz"
 podcastEmail: castinginterest@gmail.com

@@ -53,10 +53,10 @@ block: "no"
 
 ## Serena’s Recs:
 
-[Ublock Origin](https://www.ublock.org/) - for blocking ads
+- [Ublock Origin](https://www.ublock.org/) - for blocking ads
 
-[Privacy Badger](https://www.eff.org/privacybadger) - for blocking trackers
+- [Privacy Badger](https://www.eff.org/privacybadger) - for blocking trackers
 
-[HTTPS Everywhere](https://www.eff.org/https-everywhere%20) - for encrypting your web browsing whenever possible
+- [HTTPS Everywhere](https://www.eff.org/https-everywhere%20) - for encrypting your web browsing whenever possible
 
 </section>
