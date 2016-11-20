@@ -12,8 +12,8 @@ subtitle: "Advertising, authenticity, and why we read/buy/engage in things. We w
 
 summary: "Advertising, authenticity, and why we read/buy/engage in things. We welcome our new data-bloated overlords, or at least we say we do when online."
 
-duration: ""
-length: ""
+duration: "46:05"
+length: "76893956"
 explicit: "no"
 block: "no" 
 ---
