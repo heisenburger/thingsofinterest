@@ -6,7 +6,8 @@
 
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
+  <meta name="theme-color" content="#41423C">
+  
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic|Open+Sans+Condensed:300|Playfair+Display:700' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
