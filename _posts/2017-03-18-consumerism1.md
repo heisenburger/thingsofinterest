@@ -4,7 +4,7 @@ title: "Ethical Consumption Part 1"
 date: 2017-03-28 01:00:00 +1200
 index: "019"
 audiosrc: "/episodes/toi_ep19_consumerism1.mp3"
-bgsrc: "/images/fuckupayme.gif"
+bgsrc: "/images/hands.png"
 
 permalink: /episodes/ethical-consumerism-1/
 
