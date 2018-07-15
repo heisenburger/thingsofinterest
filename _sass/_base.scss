@@ -139,3 +139,15 @@ hr {
     display: none !important;
   }
 }
+
+
+.kofi {
+  margin: 5rem 0 0;
+  text-align: center;
+  @include query($bp-tablet){
+    margin: 5rem 0 -5rem;
+  }
+  span.kofitext::after {
+    content: ' to our microphone fund!';
+  }
+}
