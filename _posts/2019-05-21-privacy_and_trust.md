@@ -1,10 +1,10 @@
 ---
 layout: episode
-title: "White Supremacist Terrorism"
+title: "Privacy and Trust"
 date: 2019-05-21 01:00:00 +1200
 index: "054"
 audiosrc: "/episodes/toi_ep54-privacy_and_trust.mp3"
-bgsrc: "/images/black.png"
+bgsrc: "/images/eyes.jpg"
 
 permalink: /episodes/privacy-and-trust/
 
