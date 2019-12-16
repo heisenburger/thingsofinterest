@@ -32,6 +32,13 @@ body {
   position: relative;
   max-width: 100vw;
   overflow-x: hidden;
+  transition: background $transit-slow;
+}
+
+body.inverted {
+  background-color: black;
+  color: white;
+  transition: background $transit-slow;
 }
 
 .hidden {
@@ -50,4 +57,15 @@ body {
   .no-print {
     display: none;
   }
+}
+
+// Clear default styles
+
+.nls { // no list style
+  list-style: none;
+}
+
+.nbs { // no button style
+  background: none;
+  border: none;
 }

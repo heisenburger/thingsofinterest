@@ -8,8 +8,7 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] Set up base css stuff
 - [x] Make variable fonts work
 - [x] Make logo header
-- [ ] Put in links to platforms
-- [ ] Make hover over links with logo header
+- [x] Make hover over links with logo header
 - [ ] Make podcast player component
 - [ ] Overlay style toggles
 - [ ] Summary / Shownotes / Transcript tabs

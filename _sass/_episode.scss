@@ -1,7 +1,7 @@
-// Episode bloc
+// Episode titles
 
 .episode-index {
-  @extend .f-lrg;
+  @extend .f-dsp;
   @extend .display;
   @extend .regular;
   line-height: 1;
@@ -17,7 +17,7 @@
   opacity: 0;
   animation: 
     fade-in 1s linear 1 forwards,
-    expand-title-300 0.5s ease-out 0.5s 1 forwards;
+    expand-title-300 0.2s ease-out 0.5s 1 forwards;
 }
 
 @keyframes fade-in {
@@ -35,5 +35,88 @@
   }
   to {
     font-variation-settings: 'wdth' 300;
+  }
+}
+
+// Player
+
+.player {
+  margin: var(--u4) 0;
+}
+
+.player-button {
+  color: var(--teal);
+  transition: 0.1s;
+
+  &:focus svg path {
+    fill: currentColor;
+  }
+  &:hover {
+    cursor: pointer;
+    transform-origin: left bottom;
+    transform: scaleX(1.5);
+    transition: 0.1s;
+  }
+  &:active {
+    transform: scaleX(1.5) scaleY(0.9);
+  }
+}
+
+.player-progress {
+  height: calc(var(--u1)/2);
+  width: 100%;
+  background-color: var(--teal);
+  border-color: var(--teal);
+
+  &:not([value]) {
+    border: var(--black);
+    background-color: var(--black);
+  }
+}
+
+.player-progress[value]::-webkit-progress-bar {
+  background-color: var(--teal);
+}
+
+.player-progress[value]::-webkit-progress-value {
+  background-color: var(--pink);
+}
+
+// Background trigger
+
+.underlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--black);
+}
+
+.off {
+  opacity: 0;
+  transition: $transit-slow;
+}
+
+.on {
+  opacity: 0.4;
+  transition: $transit-slow;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 2;
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 6rem; // there are magic, find out where they come from
+  }
+  * {
+    z-index: 3;
   }
 }

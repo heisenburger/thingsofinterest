@@ -2,11 +2,9 @@
 
 $logo-height: 51px;
 $logo-width: 71px;
-$transit-short: 0.1s;
-$transit-med: 0.3s;
 
 .logonav {
-  padding: 0 0 var(--u4);
+  padding: var(--u2) 0 var(--u4);
 }
 
 .logo,
@@ -54,7 +52,7 @@ $transit-med: 0.3s;
 .platformlinks {
   @extend .f-sml;
   position: absolute;
-  top: 0;
+  top: var(--u2);
   width: 100%;
   height: $logo-height;
   text-transform: uppercase;
