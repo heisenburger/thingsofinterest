@@ -1,3 +1,7 @@
+.episode {
+  margin: var(--u4) 0;
+}
+
 // Episode titles
 
 .episode-index {
@@ -9,33 +13,11 @@
 
 .episode-title {
   @extend .display;
-  @extend .light;
+  @extend .bold;
   @extend .caps;
   font-size: 8vw;
   line-height: 0.8em;
-  font-variation-settings: 'wdth' 800;
-  opacity: 0;
-  animation: 
-    fade-in 1s linear 1 forwards,
-    expand-title-300 0.2s ease-out 0.5s 1 forwards;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes expand-title-300 {
-  from {
-    font-variation-settings: 'wdth' 800;
-  }
-  to {
-    font-variation-settings: 'wdth' 300;
-  }
+  font-variation-settings: 'wdth' 350;
 }
 
 // Player
@@ -59,15 +41,16 @@ $player-pausebutton-width: 76px;
   &:hover {
     cursor: pointer;
     transform-origin: left bottom;
-    transform: scaleX(1.5);
+    transform: scaleX(1.3);
     transition: 0.1s;
   }
   &:active {
-    transform: scaleX(1.5) scaleY(0.9);
+    transform: scaleX(1.3) scaleY(0.9);
   }
 }
 
 .player-time {
+  @extend .display;
   position: absolute;
   top: 0;
   left: $player-playbutton-width;
@@ -130,4 +113,34 @@ $player-pausebutton-width: 76px;
     display: block;
     padding-bottom: 6rem; // there are magic, find out where they come from
   }
+}
+
+// Episode details
+
+.episode-details {
+  @extend .display;
+  @extend .regular;
+  @extend .f-med;
+
+  span, a {
+    display: inline-block;
+    margin-right: var(--u8);
+  }
+
+  a {
+    @extend .sneakylink;
+  }
+
+  a.active {
+    font-variation-settings: 'wdth' 500;
+  }
+}
+
+// Large blocks of text
+
+.summary,
+.shownotes,
+.transcript {
+  margin: var(--u4) 0;
+  max-width: $measure-width;
 }

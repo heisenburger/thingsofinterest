@@ -12,7 +12,7 @@
 // Fonts
   --ff-disp-sans: "Bandeins Strange", "Montserrat", sans-serif;
   --ff-sans: "Inter", system-ui, -apple-system, sans-serif;
-
+  --ff-mono: "iA Writer Duospace", monospace;
 // Sizes
   --f-xsm: 0.875rem; // 14px
   --f-sml:     1rem; // 16px
@@ -56,7 +56,7 @@
   $bp-3xl: 2800px;
 
 // Widths
-  $measure-width: 35em;
+  $measure-width: 45em;
 
 // Duration
   $transit-short: 0.1s;
@@ -92,6 +92,10 @@
   @media screen and (orientation: portrait) {
     @content;
   }
+}
+
+@mixin autogrid($w: 100px) {
+  grid-template-columns: repeat(auto-fit, minmax($w, 1fr));
 }
 
 // Import partials

@@ -29,6 +29,9 @@ $logo-width: 71px;
     font-variation-settings: 'wdth' 200;
     text-align: center;
     transition: $transit-med;
+    a {
+      @extend .sneakylink;
+    }
   }
 
   .logo-left {
@@ -62,12 +65,11 @@ $logo-width: 71px;
   ul {
     @extend .nls;
     @extend .grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    @include autogrid;
     margin-top: calc((#{$logo-height} - 2*var(--f-med)));
   }
 
   li {
-    @extend .flex-auto;
     display: inline-block;
     text-align: center;
   }
@@ -80,15 +82,6 @@ $logo-width: 71px;
       font-variation-settings: 'wdth' 300;
       transition: font-stretch $transit-short;
     }
-  }
-}
-
-// Inverted styles
-
-.inverted .platformlinks a {
-  color: var(--grey5);
-  &:hover {
-    color: white;
   }
 }
 

@@ -1,6 +1,6 @@
 <article class="episode">
   <header>
-    <p class="episode-index">{{ page.index }}</p>
+    <span class="episode-index">#{{ page.index }}</span>
     <h1 class="episode-title">{{ page.title }}</h1>
   </header>
 
@@ -19,9 +19,14 @@
     <audio id="player-audio" data-src={{ page.audiosrc }}></audio><!-- <a class="player-download" href={{ include.audio }} download>Download MP3</a> -->
   </div>
 
-  <nav class="episode-details">nav</nav>
+  <nav class="episode-details">
+    <span>{{ page.date | date: "%-d %B %Y" }}</span>
+    <a href="" class="active">Summary</a>
+    <a href="" class="">Shownotes</a>
+    <a href="" class="">Transcript</a>
+  </nav>
 
   <section class="summary">
-    Summary
+    {{ page.summary }}
   </section>
 </article>

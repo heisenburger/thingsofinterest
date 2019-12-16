@@ -12,6 +12,10 @@
   font-family: var(--ff-disp-sans);
 }
 
+.mono {
+  font-family: var(--mono);
+}
+
 // Weights
 
 .thin {
@@ -188,6 +192,13 @@ a {
 
   &:hover {
     color: black;
+  }
+}
+
+.inverted a {
+  color: var(--grey5);
+  &:hover {
+    color: white;
   }
 }
 
