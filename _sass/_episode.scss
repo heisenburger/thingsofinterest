@@ -40,6 +40,10 @@
 
 // Player
 
+$player-button-height: 63px;
+$player-playbutton-width: 72px;
+$player-pausebutton-width: 76px;
+
 .player {
   margin: var(--u4) 0;
 }
@@ -47,6 +51,7 @@
 .player-button {
   color: var(--teal);
   transition: 0.1s;
+  height: $player-button-height;
 
   &:focus svg path {
     fill: currentColor;
@@ -62,7 +67,16 @@
   }
 }
 
+.player-time {
+  position: absolute;
+  top: 0;
+  left: $player-playbutton-width;
+}
+
 .player-progress {
+  position: absolute;
+  top: $player-button-height/2 - 3;
+  left: $player-playbutton-width;
   height: calc(var(--u1)/2);
   width: 100%;
   background-color: var(--teal);
@@ -115,8 +129,5 @@
     content: '';
     display: block;
     padding-bottom: 6rem; // there are magic, find out where they come from
-  }
-  * {
-    z-index: 3;
   }
 }

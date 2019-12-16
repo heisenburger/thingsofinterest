@@ -4,7 +4,7 @@
     <h1 class="episode-title">{{ page.title }}</h1>
   </header>
 
-  <div class="player">
+  <div class="player anchor">
     <button class="nbs player-button player-play" alt="Play">
       {% include play.svg %}
     </button>
@@ -12,8 +12,8 @@
       {% include pause.svg %}
     </button>
     <div class="player-time">
-      <span class="player-currenttime player-time f-left t-cd">00:00</span> //
-      <span class="player-duration player-time f-right t-cd">00:00</span>
+      <span class="player-currenttime f-left t-cd">00:00:00</span> //
+      <span class="player-duration f-right t-cd">00:00:00</span>
     </div>
     <progress class="player-progress" value="0"></progress>
     <audio id="player-audio" data-src={{ page.audiosrc }}></audio><!-- <a class="player-download" href={{ include.audio }} download>Download MP3</a> -->
