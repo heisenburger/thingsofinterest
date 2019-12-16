@@ -1,0 +1,69 @@
+// -----------------
+// Font declarations
+// -----------------
+
+$fontDisplay: swap;
+
+// Bandeins Strange Variable
+
+@mixin declare-bandeins($weight, $width, $variantPath){
+  @font-face {
+    font-family: "Bandeins Strange";
+    font-weight: $weight;
+    font-stretch: $width;
+    font-style: normal;
+    font-display: $fontDisplay;
+    src: url("/webfonts/BandeinsStrangeVariableGX.woff2") format("woff2-variations"),
+         url("/webfonts/BandeinsStrange#{$variantPath}.woff2") format("woff2");
+  }
+}
+
+@include declare-bandeins(200, 100, Light);
+@include declare-bandeins(200, 400, LightExtendedHalf);
+@include declare-bandeins(200, 800, LightExtendedFull);
+@include declare-bandeins(400, 100, Regular);
+@include declare-bandeins(400, 400, RegularExtendedHalf);
+@include declare-bandeins(400, 800, RegularExtendedFull);
+@include declare-bandeins(500, 100, Medium);
+@include declare-bandeins(500, 400, MediumExtendedHalf);
+@include declare-bandeins(500, 800, MediumExtendedFull);
+@include declare-bandeins(600, 100, SemiBold);
+@include declare-bandeins(600, 400, SemiBoldExtendedHalf);
+@include declare-bandeins(600, 800, SemiBoldExtendedFull);
+@include declare-bandeins(800, 100, Bold);
+@include declare-bandeins(800, 400, BoldExtendedHalf);
+@include declare-bandeins(800, 800, BoldExtendedFull);
+
+// Inter Variable
+
+@mixin declare-inter($weight, $variantPath){
+  // Using the single-axis variable font since the italic support is still a bit iffy
+  @font-face {
+    font-family: "Inter";
+    font-weight: $weight;
+    font-display: $fontDisplay;
+    font-style: normal;
+    font-named-instance: "Regular";
+    src: url("/webfonts/Inter-roman.var.woff2?v=3.11") format("woff2"),
+         url("/webfonts/Inter-#{$variantPath}.woff2?v=3.11") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: $weight;
+    font-display: $fontDisplay;
+    font-style: italic;
+    font-named-instance: "Italic";
+    src: url("/webfonts/Inter-italic.var.woff2?v=3.11") format("woff2"),
+         url("/webfonts/Inter-#{$variantPath}Italic.woff2?v=3.11") format("woff2");
+  }
+}
+
+@include declare-inter(100, Thin);
+@include declare-inter(200, ExtraLight);
+@include declare-inter(300, Light);
+@include declare-inter(400, Regular);
+@include declare-inter(500, Medium);
+@include declare-inter(600, SemiBold);
+@include declare-inter(700, Bold);
+@include declare-inter(800, ExtraBold);
+@include declare-inter(900, Black);

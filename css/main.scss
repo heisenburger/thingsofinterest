@@ -2,7 +2,91 @@
 ---
 @charset "utf-8";
 
+// ---------
+// Variables
+// ---------
 
+// CSS Variables
+:root {
+
+// Fonts
+  --ff-disp-sans: "Bandeins Strange", "Montserrat", sans-serif;
+  --ff-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+// Sizes
+  --f-xsm: 0.875rem; // 14px
+  --f-sml:     1rem; // 16px
+  --f-med:  1.25rem; // 20px
+  --f-lrg:   2.5rem; // 40px
+  --f-dsp:  3.75rem; // 60px
+  --f-xdp:     5rem; // 80px
+  --f-2xd:  6.25rem; // 100px
+
+  --u1:  0.625rem;   // 10px
+  --u2:  calc(2 * var(--unit));
+  --u4:  calc(4 * var(--unit));
+  --u6:  calc(6 * var(--unit));
+  --u8:  calc(8 * var(--unit));
+  --u12: calc(12 * var(--unit));
+  --u16: calc(16 * var(--unit));
+
+// Colours
+  --grey1: #333;
+  --grey2: #5a5a5a;
+  --grey3: #b2b2b2;
+  --grey4: #d0d0d0;
+  --grey5: #f6f6f6;
+
+  --black:  #{{ site.black }};
+  --purple: #{{ site.purple }};
+  --pink:   #{{ site.pink }};
+  --teal:   #{{ site.teal }};
+  --peach:  #{{ site.peach }};
+}
+
+// Sass variables
+
+// Breakpoints
+  $bp-sml:  480px;
+  $bp-med:  768px;
+  $bp-lrg: 1024px;
+  $bp-xlg: 1440px;
+  $bp-2xl: 2000px;
+  $bp-3xl: 2800px;
+
+// Widths
+  $measure-width: 35em;
+
+// Helpers
+// -------
+
+// Mobile-first media queries
+@mixin q($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Desktop-first media queries
+@mixin q-down($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// If screen is landscape
+@mixin landscape() {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+// If screen is portrait
+@mixin portrait() {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
 
 // Import partials
 // ---------------

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="underlay" class="underlay off" style="" data-src="background-image:url({{ page.bgsrc }});"></div>
+
+    <div class="overlay">
+
+      <main class="cwidth">
+        
+        {{ content }}
+        
+      </main>
+
+    </div>
+
+    {% include foot.html %}
+
+  </body>
+
+</html>
