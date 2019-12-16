@@ -83,6 +83,15 @@ $logo-width: 71px;
   }
 }
 
+// Inverted styles
+
+.inverted .platformlinks a {
+  color: var(--grey5);
+  &:hover {
+    color: white;
+  }
+}
+
 // Nav only reveals on non-mobile interfaces
 
 @include q($bp-med){
