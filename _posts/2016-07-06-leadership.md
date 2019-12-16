@@ -24,7 +24,7 @@ block: "no"
 
 </section>
 
-{% include toggle-shownotes.html %}
+
 
 <section id="shownotes" class="hidden" markdown="1">
 Here is the list of articles we (claim to have) read and media we discussed during this episode. You never know how terrible you sound saying #topical until you hear yourself recorded saying #topical.

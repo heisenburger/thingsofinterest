@@ -23,7 +23,7 @@ block: "no"
 
 </section>
 
-{% include toggle-shownotes.html %}
+
 
 <section id="shownotes" class="hidden" markdown="1">
 Episode three: the episode where it becomes incredibly clear that we’re both meming tumblr trash, and where Sophia refuses to do the Home Improvement Confused Grunt Noise (and earns that explicit tag). Text-based media are opening a new window into cultural and linguistic development and we have a good time discussing this, and swapping some dank memes.

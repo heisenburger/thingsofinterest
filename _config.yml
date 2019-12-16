@@ -1,9 +1,11 @@
 # Site settings
 title: Things of Interest
 email: castinginterest@gmail.com
-description: "Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, modern dating, the job market, and fandom? Probably no-one."
+description: >
+  Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. 
+  Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, bitcoin, quantum computers, gene editing, and fandom? Probably no-one.
 baseurl: ""
-url: "https://www.thingsofinterest.co"
+url: "https://thingsofinterest.co"
 twitter_username: castinginterest
 github_username: heisenburger
 
@@ -13,14 +15,21 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# Global variables (hex)
+black: "464656"
+purple: "9078A7"
+pink: "CD5B75"
+teal: "8BCFD2"
+peach: "F7EADF"
+
 # Podcast General Settings
-podcastSite: http://www.thingsofinterest.co
-podcastCoverImg: http://www.thingsofinterest.co/images/toi-cover2.png
+podcastSite: https://thingsofinterest.co
+podcastCoverImg: https://thingsofinterest.co/images/toi-cover2.png
 podcastTitle: Things of Interest
 podcastOwner: "Serena Chen &amp; Sophia Frentz"
 podcastEmail: castinginterest@gmail.com
 podcastIsExplicit: "no"
 
 podcastAuthor: "Serena Chen &amp; Sophia Frentz"
-podcastDescription: "Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, modern dating, the job market, and fandom? Probably no-one."
-podcastSubtitle: Non-feminist topics through a feminist lens.
+podcastDescription: "Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, bitcoin, quantum computers, gene editing, and fandom? Probably no-one.fandom? Probably no-one."
+podcastSubtitle: Society, science, tech and culture through a feminist lens.
