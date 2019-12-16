@@ -1,0 +1,39 @@
+// Episode bloc
+
+.episode-index {
+  @extend .f-lrg;
+  @extend .display;
+  @extend .regular;
+  line-height: 1;
+}
+
+.episode-title {
+  @extend .display;
+  @extend .light;
+  @extend .caps;
+  font-size: 8vw;
+  line-height: 0.8em;
+  font-variation-settings: 'wdth' 800;
+  opacity: 0;
+  animation: 
+    fade-in 1s linear 1 forwards,
+    expand-title-300 0.5s ease-out 0.5s 1 forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes expand-title-300 {
+  from {
+    font-variation-settings: 'wdth' 800;
+  }
+  to {
+    font-variation-settings: 'wdth' 300;
+  }
+}
