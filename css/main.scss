@@ -17,6 +17,7 @@
   --f-xsm: 0.875rem; // 14px
   --f-sml:     1rem; // 16px
   --f-med:  1.25rem; // 20px
+  --f-smi: 1.875rem; // 30px
   --f-lrg:   2.5rem; // 40px
   --f-dsp:  3.75rem; // 60px
   --f-xdp:     5rem; // 80px
@@ -92,5 +93,7 @@
 // ---------------
 
 @import
-  "fonts"
+  "fonts",
+  "base",
+  "typography"
 ;

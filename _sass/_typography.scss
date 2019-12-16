@@ -1,0 +1,197 @@
+// ----------
+// Typography
+// ----------
+
+// Font families
+
+.sans {
+  font-family: var(--ff-sans);
+}
+
+.disp {
+  font-family: var(--ff-disp-sans);
+}
+
+// Weights
+
+.thin {
+  font-weight: 100;
+  @include q-down($bp-med){
+    font-weight: 300;
+  }
+}
+
+.light {
+  font-weight: 200;
+  @include q-down($bp-sml){
+    font-weight: 300;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+b, strong, .bold {
+  font-weight: 600;
+}
+
+.thicc {
+  font-weight: 800;
+}
+
+.heavy {
+  font-weight: 900;
+}
+
+// Styles
+
+i, em, .italic {
+  font-style: italic;
+}
+
+// Widths
+
+.expanded {
+  font-stretch: expanded;
+}
+
+.extra-expanded {
+  font-stretch: extra-expanded;
+}
+
+.ultra-expanded {
+  font-stretch: ultra-expanded;
+}
+
+// Sizes
+
+.f-xsm {
+  font-size: var(--f-xsm);
+  @include q($bp-xlg){
+    font-size: var(--f-sml);
+  }
+}
+
+small, .small, .f-sml {
+  font-size: var(--f-sml);
+}
+
+.f-med {
+  font-size: var(--f-med);
+}
+
+.f-lrg {
+  font-size: var(--f-smi);
+  @include q($bp-sml){
+    font-size: var(--f-lrg);
+  }
+}
+
+.f-dsp {
+  font-size: var(--f-lrg);
+  @include q($bp-sml){
+    font-size: var(--f-dsp);
+  }
+}
+
+.f-xdp {
+  font-size: var(--f-lrg);
+  line-height: 1.25;
+  @include q($bp-med){
+    font-size: var(--f-dsp);
+  }
+  @include q($bp-xlg){
+    font-size: var(--f-xdp);
+  }
+}
+
+.f-2xd {
+  font-size: var(--f-lrg);
+  line-height: 1.25;
+  @include q($bp-sml){
+    font-size: var(--f-dsp);
+    line-height: 1;
+  }
+  @include q($bp-lrg){
+    font-size: var(--f-xdp);
+  }
+  @include q($bp-xlg){
+    font-size: var(--f-2xd);
+  }
+}
+
+// Letterspacing
+
+.spaced1 {
+  letter-spacing: 0.075em;
+}
+
+.spaced2 {
+  letter-spacing: 0.125em;
+}
+
+.spaced3 {
+  letter-spacing: 0.25em;
+}
+
+.tight {
+  letter-spacing: -0.02em;
+}
+
+// Alignment
+
+.text-center {
+  text-align: left;
+  @include q($bp-sml){
+    text-align: center;
+  }
+}
+
+.text-justify {
+  text-align: left;
+  @include q($bp-sml){
+    text-align: justify;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Decorative
+
+h1, h2, h3, h4, blockquote, 
+.display, .drop-cap {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Links
+
+a {
+  color: var(--black);
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(transparent -300%,currentColor 600%);
+  background-image: linear-gradient(transparent -300%,currentColor 600%);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: black;
+  }
+}
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}
+
+.sneakylink {
+  text-decoration: none;
+  background-image: none;
+}

@@ -1,0 +1,53 @@
+// -----------
+// Base styles
+// -----------
+
+// Reset
+
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+// Base
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-sans);
+  line-height: 1.5;
+  color: var(--black);
+  background-color: white;
+  font-feature-settings: "kern" 1,"liga" 1, "calt" 1, "case" 1, "ss01" 1, "ss03" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7, deprecated */
+  clip-path: polygon(0% 0%);
+}
+
+@media print {
+  body {
+    color: black !important;
+  }
+  .no-print {
+    display: none;
+  }
+}
