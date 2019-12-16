@@ -5,9 +5,10 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 ## To do
 
 - [x] Clear out old layout and styles so jekyll compiles without pouting at me
-- [ ] Set up base css stuff
-- [ ] Make variable fonts work
-- [ ] Make logo header
+- [x] Set up base css stuff
+- [x] Make variable fonts work
+- [x] Make logo header
+- [ ] Put in links to platforms
 - [ ] Make hover over links with logo header
 - [ ] Make podcast player component
 - [ ] Overlay style toggles

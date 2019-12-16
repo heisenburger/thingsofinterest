@@ -1,0 +1,118 @@
+// Logo
+
+$logo-height: 51px;
+$logo-width: 71px;
+$transit-short: 0.1s;
+$transit-med: 0.3s;
+
+.logonav {
+  padding: 0 0 var(--u4);
+}
+
+.logo,
+.platformlinks {
+  @extend .display;
+}
+
+.logo {
+  position: relative;
+  width: $logo-width;
+  height: $logo-height;
+  margin: 0 auto;
+  transform-origin: center;
+}
+
+  .logo-text {
+    @extend .display;
+    @extend .f-med;
+    @extend .regular;
+    word-spacing: -0.2em;
+    text-transform: lowercase;
+    font-variation-settings: 'wdth' 200;
+    text-align: center;
+    transition: $transit-med;
+  }
+
+  .logo-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .logo-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .logo-left, .logo-right {
+    transition: transform $transit-med ease-in-out $transit-short;
+  }
+
+// Nav
+
+.platformlinks {
+  @extend .f-sml;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: $logo-height;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity $transit-med ease-in-out $transit-short;
+
+  ul {
+    @extend .nls;
+    @extend .grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: calc((#{$logo-height} - 2*var(--f-med)));
+  }
+
+  li {
+    @extend .flex-auto;
+    display: inline-block;
+    text-align: center;
+  }
+
+  a {
+    @extend .sneakylink;
+    padding: var(--u1);
+    pointer-events: none;
+    &:hover {
+      font-variation-settings: 'wdth' 300;
+      transition: font-stretch $transit-short;
+    }
+  }
+}
+
+// Nav only reveals on non-mobile interfaces
+
+@include q($bp-med){
+  .logonav:hover {
+
+    // logo animates out
+    .logo-left, .logo-right {
+      transition: transform $transit-short ease-in-out $transit-short;
+    }
+    .logo-left {
+      transform: translateX(-50vw);
+    }
+    .logo-right {
+      transform: translateX(50vw);
+    }
+    .logo-text {
+      font-variation-settings: 'wdth' 600;
+      transition: $transit-short;
+    }
+
+    // nav reveals itself
+    .platformlinks {
+      opacity: 1;
+      transition: opacity $transit-med ease-in-out $transit-short;
+      a {
+        pointer-events: auto;
+        transition: $transit-short;
+      }
+    }
+  }
+}

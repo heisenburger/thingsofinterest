@@ -24,12 +24,12 @@
   --f-2xd:  6.25rem; // 100px
 
   --u1:  0.625rem;   // 10px
-  --u2:  calc(2 * var(--unit));
-  --u4:  calc(4 * var(--unit));
-  --u6:  calc(6 * var(--unit));
-  --u8:  calc(8 * var(--unit));
-  --u12: calc(12 * var(--unit));
-  --u16: calc(16 * var(--unit));
+  --u2:  calc(2 * var(--u1));
+  --u4:  calc(4 * var(--u1));
+  --u6:  calc(6 * var(--u1));
+  --u8:  calc(8 * var(--u1));
+  --u10: calc(10 * var(--u1));
+  --u20: calc(20 * var(--u1));
 
 // Colours
   --grey1: #333;
@@ -95,5 +95,7 @@
 @import
   "fonts",
   "base",
-  "typography"
+  "typography",
+  "layout",
+  "logonav"
 ;
