@@ -28,13 +28,9 @@
   padding-left: var(--u2);
   padding-right: var(--u2);
   padding-bottom: var(--u2);
-  @include q($bp-med){
+  @include q($bp-lrg){
     padding-left: var(--u4);
     padding-right: var(--u4);
-  }
-  @include q($bp-lrg){
-    padding-left: var(--u6);
-    padding-right: var(--u6);
   }
   @include q($bp-xlg){
     padding-left: var(--u10);
@@ -82,74 +78,3 @@
   }
 }
 
-// Text blocks
-
-.alternate {
-  div {
-    margin-bottom: var(--u6);
-    &:last-child {
-      margin-bottom: 0;
-    }
-    .big-text {
-      text-align: center;
-    }
-    @include q($bp-med) {
-      display: flex;
-      align-items: center;
-      &:nth-child(odd) {
-        flex-direction: row;
-        section,
-        blockquote {
-          padding-right: var(--u2);
-        }
-        section:last-child,
-        blockquote:last-child {
-          padding-right: 0;
-        }
-        .big-text {
-          text-align: left;
-        }
-      }
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-        section,
-        blockquote {
-          padding-left: var(--u2);
-        }
-        section:last-child,
-        blockquote:last-child {
-          padding-left: 0;
-        }
-        .big-text {
-          text-align: right;
-        }
-      }
-    }
-  }
-}
-
-  .big-text {
-    flex: 0 1 auto;
-    @extend .display;
-    font-variation-settings: 'wdth' 350;
-    font-size: 8vw;
-    line-height: 1;
-    text-transform: lowercase;
-    word-wrap: normal;
-    @include q($bp-med) {
-      flex: 1 1 40%;
-    }
-    @include q($bp-lrg) {
-      font-size: 6vw;
-    }
-  }
-  .flex-space {
-    flex: 1 1 0;
-  }
-  .paragraphs {
-    flex: 0 1 auto;
-    width: 100%;
-    @include q($bp-med) {
-      flex: 1 0 50%;
-    }
-  }

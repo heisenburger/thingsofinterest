@@ -218,3 +218,35 @@ a {
 p {
   margin: var(--u2) 0;
 }
+
+// Titles
+
+.title {
+  @extend .display;
+  @extend .caps;
+  @extend .f-2xd;
+  font-variation-settings: 'wdth' 350, 'wght' 350;
+  line-height: 1;
+  .title-left, .title-right {
+    display: inline;
+    @include q($bp-med){
+      display: block;
+    }
+  }
+  @include q($bp-med){
+    .title-left {
+      text-align: left;
+    }
+    .title-right {
+      text-align: right;
+    }
+  }
+}
+
+.big-text {
+  @extend .display;
+  @extend .f-2xd;
+  font-variation-settings: 'wdth' 350;
+  line-height: 1;
+  text-transform: lowercase;
+}
