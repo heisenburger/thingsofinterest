@@ -51,23 +51,17 @@ $logo-width: 71px;
     transition: transform $transit-med ease-in-out $transit-short;
   }
 
-// Nav
+// Platform links
 
 .platformlinks {
   @extend .f-sml;
-  position: absolute;
-  top: var(--u2);
   width: 100%;
-  height: $logo-height;
   text-transform: uppercase;
-  opacity: 0;
-  transition: opacity $transit-med ease-in-out $transit-short;
 
   ul {
     @extend .nls;
     @extend .grid;
     @include autogrid;
-    margin-top: calc((#{$logo-height} - 2*var(--f-med)));
   }
 
   li {
@@ -78,12 +72,29 @@ $logo-width: 71px;
   a {
     @extend .sneakylink;
     padding: var(--u1);
-    pointer-events: none;
     font-variation-settings: 'wdth' 100;
     transition: $transit-short;
     &:hover {
       font-variation-settings: 'wdth' 300;
       transition: $transit-short;
+    }
+  }
+}
+
+.logonav{
+  .platformlinks {
+    position: absolute;
+    top: var(--u2);
+    height: $logo-height;
+    opacity: 0;
+    transition: opacity $transit-med ease-in-out $transit-short;
+
+    ul {
+      margin-top: calc((#{$logo-height} - 2*var(--f-med)));
+    }
+
+    a {
+      pointer-events: none;
     }
   }
 }
