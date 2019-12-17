@@ -125,6 +125,7 @@ $player-pausebutton-width: 76px;
 
 .episode-details {
   @extend .anchor;
+  padding: var(--u2) 0;
   & > span,
   & > label {
     @extend .display;
@@ -138,12 +139,10 @@ $player-pausebutton-width: 76px;
 .summary,
 .shownotes,
 .transcript {
-  position: absolute;
-  top: 0;
   opacity: 0;
   height: 0;
   overflow: hidden;
-  margin: var(--u8) 0 var(--u4);
+  margin: 0;
   max-width: $measure-width;
   transform: translateY(calc( -1 * var(--u2)));
   transition: opacity $transit-short, transform $transit-med;
@@ -196,6 +195,7 @@ $player-pausebutton-width: 76px;
 .tab#tab-summary:checked ~ .summary,
 .tab#tab-shownotes:checked ~ .shownotes, 
 .tab#tab-transcript:checked ~ .transcript {
+  margin: var(--u2) 0;
   opacity: 1;
   transform: translateY(0);
   height: initial;

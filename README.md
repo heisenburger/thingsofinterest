@@ -9,9 +9,9 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] Make variable fonts work
 - [x] Make logo header
 - [x] Make hover over links with logo header
-- [ ] Make podcast player component
-- [ ] Overlay style toggles
-- [ ] Summary / Shownotes / Transcript tabs
+- [x] Make podcast player component
+- [x] Overlay style toggles
+- [x] Summary / Shownotes / Transcript tabs
 - [ ] Links to podcast platforms component
 - [ ] About component (remember to have short version)
 - [ ] Page break lines components
