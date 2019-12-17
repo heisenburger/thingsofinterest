@@ -55,14 +55,17 @@ a.episode-row{
     opacity: 0;
     transition: opacity $transit-short;
   }
-  &:hover {
-    .episode-name {
-      font-variation-settings: var(--w3);
-      transition: $transit-med ease-in 1s;
-    }
-    &::before {
-      opacity: 1;
-      transition: opacity $transit-long var(--ease-way-out);
+  // only give hover effects on larger screens
+  @include q($bp-med){
+    &:hover {
+      .episode-name {
+        font-variation-settings: var(--w3);
+        transition: $transit-med ease-in 1s;
+      }
+      &::before {
+        opacity: 1;
+        transition: opacity $transit-long var(--ease-way-out);
+      }
     }
   }
 }

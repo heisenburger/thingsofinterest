@@ -94,10 +94,18 @@ footer {
 }
 
 #footer-nav {
-  float: right;
+  float: none;
+  padding-top: var(--u2);
   @extend .wide3;
   a {
     @extend .sneakylink;
-    margin-left: var(--u4);
+    margin-right: var(--u2);
+  }
+  @include q($bp-med){
+    float: right;
+    padding-top: 0;
+    a {
+      margin-left: var(--u4);
+    }
   }
 }
