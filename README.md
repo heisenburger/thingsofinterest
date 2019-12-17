@@ -13,9 +13,9 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] Overlay style toggles
 - [x] Summary / Shownotes / Transcript tabs
 - [ ] Links to podcast platforms component
-- [ ] About component (remember to have short version)
-- [ ] Page break lines components
-- [ ] Contact us component
+- [x] About component (remember to have short version)
+- [x] Page break lines components
+- [x] Contact us component
 - [ ] All episodes component
 - [ ] Footer links component
 - [ ] PWA manifest.json stuff

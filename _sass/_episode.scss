@@ -1,5 +1,5 @@
 .episode {
-  margin: var(--u4) 0;
+  @extend .vp-8;
 }
 
 // --------------
@@ -125,7 +125,7 @@ $player-pausebutton-width: 76px;
 
 .episode-details {
   @extend .anchor;
-  padding: var(--u2) 0;
+  padding-top: var(--u2);
   & > span,
   & > label {
     @extend .display;
