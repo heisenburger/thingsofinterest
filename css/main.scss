@@ -54,6 +54,9 @@
   --pink:   #{{ site.pink }};
   --teal:   #{{ site.teal }};
   --peach:  #{{ site.peach }};
+
+// Easings
+  --ease-way-out: cubic-bezier(0.000, 0.815, 1.000, 0.675);
 }
 
 // Sass variables
@@ -72,7 +75,7 @@
 // Duration
   $transit-short: 0.1s;
   $transit-med: 0.3s;
-  $transit-slow: 2s;
+  $transit-long: 2s;
 
 // Helpers
 // -------

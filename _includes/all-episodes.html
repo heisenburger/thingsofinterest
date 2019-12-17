@@ -13,13 +13,21 @@
     {% capture current %}
       {{ entry.url | remove: slug | remove: "//" | append: "/" }}
     {% endcapture %}
-    <li class="{% if page.url contains entry.url %}active{% endif %}">
-      <a class="episode-row" href="{{ entry.url }}">
-        <span class="episode-index">{{ entry.index }}</span>
-        <span class="episode-name">{{ entry.title }}</span>
-        <span class="episode-duration">{{ entry.duration }}</span>
-        <span class="episode-date">{{ entry.date | date: '%d %B %y' }}</span>
-      </a>
+    <li>
+      {% if page.url contains entry.url %}
+        <div class="episode-row active">
+      {% else %}
+        <a class="episode-row" href="{{ entry.url }}">
+      {% endif %}
+          <span class="episode-index">{{ entry.index }}</span>
+          <span class="episode-name">{{ entry.title }}</span>
+          <span class="episode-duration">{{ entry.duration }}</span>
+          <span class="episode-date">{{ entry.date | date: '%d %B %y' }}</span>
+      {% if page.url contains entry.url %}
+        </div>
+      {% else %}
+        </a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

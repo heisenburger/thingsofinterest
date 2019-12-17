@@ -97,12 +97,12 @@ $player-pausebutton-width: 76px;
 
 .off {
   opacity: 0;
-  transition: $transit-slow;
+  transition: $transit-long;
 }
 
 .on {
   opacity: 0.4;
-  transition: $transit-slow;
+  transition: $transit-long;
 }
 
 .overlay {
@@ -127,9 +127,6 @@ $player-pausebutton-width: 76px;
     @extend .f-med;
     padding-top: var(--u2);
     padding-bottom: var(--u2);
-  }
-  @include q($bp-sml){
-    white-space: nowrap;
   }
 }
 

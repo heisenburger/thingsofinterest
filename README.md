@@ -16,7 +16,7 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] About component (remember to have short version)
 - [x] Page break lines components
 - [x] Contact us component
-- [ ] All episodes component
-- [ ] Footer links component
+- [x] All episodes component
+- [x] Footer links component
 - [ ] Check all episodes work
 - [ ] PWA manifest.json stuff
