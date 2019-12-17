@@ -6,7 +6,7 @@
 // Episode titles
 // --------------
 
-.episode-index {
+.episode .episode-index {
   @extend .f-dsp;
   @extend .display;
   @extend .regular;
@@ -124,8 +124,12 @@ $player-pausebutton-width: 76px;
   & > span,
   & > label {
     @extend .display;
+    @extend .f-med;
     padding-top: var(--u2);
     padding-bottom: var(--u2);
+  }
+  @include q($bp-sml){
+    white-space: nowrap;
   }
 }
 
@@ -152,9 +156,8 @@ $player-pausebutton-width: 76px;
 .tab-label {
   @extend .anchor;
   display: inline-block;
-  padding-left: var(--u4);
-  padding-right: var(--u4);
-  width: calc( 20 * var(--u1) );
+  padding-left: var(--u2);
+  padding-right: var(--u2);
   font-variation-settings: var(--w0);
   text-align: center;
   transition: $transit-short;
@@ -162,6 +165,14 @@ $player-pausebutton-width: 76px;
     cursor: pointer;
     font-variation-settings: var(--w3);
     transition: $transit-short;
+  }
+  @include q($bp-med){
+    min-width: calc( 20 * var(--u1) );
+  }
+  @include q($bp-lrg){
+    width: calc( 25 * var(--u1) );
+    padding-left: var(--u4);
+    padding-right: var(--u4);
   }
 }
 
@@ -175,7 +186,7 @@ $player-pausebutton-width: 76px;
     color: inherit;
     stroke: 1px;
     position: absolute;
-    top: var(--u1);
+    top: calc(1.5 * var(--u1));
     opacity: 0.8;
   }
   &::before {

@@ -1,0 +1,29 @@
+<div class="vp-4"></div>
+<h2 class="screen-edge title">all episodes</h2>
+<div class="vp-2"></div>
+
+{% capture html %}
+
+<ul class="episode-list nls screen-edge">
+  {% assign entries = site.posts %}
+  {% for entry in entries %}
+    {% capture slug %}
+      {{ entry.url | split: "/" | last }}
+    {% endcapture %}
+    {% capture current %}
+      {{ entry.url | remove: slug | remove: "//" | append: "/" }}
+    {% endcapture %}
+    <li class="{% if page.url contains entry.url %}active{% endif %}">
+      <a class="episode-row" href="{{ entry.url }}">
+        <span class="episode-index">{{ entry.index }}</span>
+        <span class="episode-name">{{ entry.title }}</span>
+        <span class="episode-duration">{{ entry.duration }}</span>
+        <span class="episode-date">{{ entry.date | date: '%d %B %y' }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}
+
+<div class="vp-2"></div>

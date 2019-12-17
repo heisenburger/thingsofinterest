@@ -29,6 +29,10 @@
   --u6:  calc(6 * var(--u1));
   --u8:  calc(8 * var(--u1));
   --u10: calc(10 * var(--u1));
+  --u12: calc(12 * var(--u1));
+  --u14: calc(14 * var(--u1));
+  --u16: calc(14 * var(--u1));
+  --u18: calc(14 * var(--u1));
   --u20: calc(20 * var(--u1));
 
   --w0: 'wdth' 100;
@@ -115,5 +119,6 @@
   "layout",
   "decorative",
   "logonav",
-  "episode"
+  "episode",
+  "episode-list"
 ;

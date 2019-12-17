@@ -1,0 +1,56 @@
+.episode-list {
+  max-width: 1200px;
+  @extend .display;
+  font-size: var(--f-sml);
+  @include q($bp-med){
+    font-size: var(--f-med);
+  }
+}
+
+.episode-row {
+  @extend .sneakylink;
+  display: grid;
+  padding: var(--u1) 0;
+  // title and duration
+  grid-template-columns: auto var(--u10);
+  grid-column-gap: var(--u1);
+  @include q($bp-sml){
+    // title, duration and date
+    grid-template-columns: auto var(--u10) var(--u14);
+    grid-column-gap: var(--u2);
+  }
+  @include q($bp-med){
+    // index, title, duration, date
+    grid-template-columns: var(--u4) auto var(--u10) var(--u20);
+  }
+  @include q($bp-lrg){
+    grid-column-gap: var(--u4);
+  }
+} 
+
+.episode-index {
+  @extend .thin;
+  display: none;
+  @include q($bp-med){
+    display: initial;
+  }
+}
+
+.episode-title {
+  overflow-wrap: nowrap;
+}
+
+.episode-date {
+  @extend .thin;
+  text-align: right;
+  display: none;
+  @include q($bp-sml){
+    display: initial;
+  }
+}
+
+.episode-duration {
+  @extend .thin;
+  text-align: right;
+}
+

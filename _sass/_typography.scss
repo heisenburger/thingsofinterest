@@ -240,7 +240,6 @@ p {
 
 .title {
   @extend .display;
-  @extend .caps;
   @extend .f-2xd;
   font-variation-settings: var(--w2), 'wght' 350;
   line-height: 1;
