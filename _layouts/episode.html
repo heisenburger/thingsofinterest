@@ -23,9 +23,16 @@
 
       {% include about.html %}
 
+      {% include hr.html direction="right" color=site.teal %}
+
+      {% include footer.html %}
+
     </div>
 
-    <script type="text/javascript">{% include player.js %}</script>
+    <script type="text/javascript">
+      {% include player.js %}
+      {% include GA.js %}
+    </script>
 
   </body>
 

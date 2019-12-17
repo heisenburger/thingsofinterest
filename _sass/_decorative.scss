@@ -83,3 +83,21 @@ hr.rule-right {
       flex: 1 0 50%;
     }
   }
+
+// Footer
+
+footer {
+  @extend .screen-edge;
+  @extend .display;
+  font-size: var(--f-med);
+  margin: var(--u6) 0;
+}
+
+#footer-nav {
+  float: right;
+  @extend .wide3;
+  a {
+    @extend .sneakylink;
+    margin-left: var(--u4);
+  }
+}

@@ -26,7 +26,7 @@ $logo-width: 71px;
     @extend .regular;
     word-spacing: -0.2em;
     text-transform: lowercase;
-    font-variation-settings: 'wdth' 100;
+    font-variation-settings: var(--w0);
     text-align: center;
     transition: $transit-med;
     a {
@@ -73,10 +73,10 @@ $logo-width: 71px;
   a {
     @extend .sneakylink;
     padding: var(--u1);
-    font-variation-settings: 'wdth' 100;
+    font-variation-settings: var(--w0);
     transition: $transit-short;
     &:hover {
-      font-variation-settings: 'wdth' 300;
+      font-variation-settings: var(--w2);
       transition: $transit-short;
     }
   }
@@ -115,7 +115,7 @@ $logo-width: 71px;
       transform: translateX(50vw);
     }
     .logo-text {
-      font-variation-settings: 'wdth' 600;
+      font-variation-settings: var(--w4);
       transition: $transit-short;
     }
 

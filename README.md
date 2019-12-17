@@ -18,4 +18,5 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] Contact us component
 - [ ] All episodes component
 - [ ] Footer links component
+- [ ] Check all episodes work
 - [ ] PWA manifest.json stuff

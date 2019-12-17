@@ -5,17 +5,19 @@
 
   <body>
 
-    <div>
+    <main>
 
-      <main>
+      {% include logonav.html %}
+      
+      {{ content }}
 
-        {% include logonav.html %}
-        
-        {{ content }}
-        
-      </main>
+      {% include footer.html %}
+      
+    </main>
 
-    </div>
+    <script type="text/javascript">
+      {% include GA.js %}
+    </script>
 
   </body>
 
