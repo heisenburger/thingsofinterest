@@ -1,0 +1,32 @@
+<section class="episode-details">
+  <span>{{ page.date | date: "%-d %B %Y" }}</span>
+  <span class="hidden">Showing:</span>
+  {% if page.summary %}
+    <input type="radio" id="tab-summary" name="episode-details-tabs" class="tab" checked>
+    <label for="tab-summary" class="tab-label">Summary</label>
+  {% endif %}
+  {% if page.shownotes %}
+    <input type="radio" id="tab-shownotes" name="episode-details-tabs" class="tab">
+    <label for="tab-shownotes" class="tab-label">Shownotes</label>
+  {% endif %}
+  {% if page.transcript %}
+    <input type="radio" id="tab-transcript" name="episode-details-tabs" class="tab">
+    <label for="tab-transcript" class="tab-label">Transcript</label>
+  {% endif %}
+
+  {% if page.summary %}
+  <section class="summary">
+    {{ page.summary || markdownify }}
+  </section>
+  {% endif %}
+  {% if page.shownotes %}
+  <section class="shownotes">
+    {{ page.shownotes || markdownify }}
+  </section>
+  {% endif %}
+  {% if page.transcript %}
+  <section class="transcript">
+    {{ page.transcript || markdownify }}
+  </section>
+  {% endif %}
+</section>

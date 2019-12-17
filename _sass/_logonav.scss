@@ -4,7 +4,8 @@ $logo-height: 51px;
 $logo-width: 71px;
 
 .logonav {
-  padding: var(--u2) 0 var(--u4);
+  padding: var(--u2) 0 0;
+  margin-bottom: var(--u4);
 }
 
 .logo,
@@ -26,7 +27,7 @@ $logo-width: 71px;
     @extend .regular;
     word-spacing: -0.2em;
     text-transform: lowercase;
-    font-variation-settings: 'wdth' 200;
+    font-variation-settings: 'wdth' 100;
     text-align: center;
     transition: $transit-med;
     a {
@@ -78,9 +79,11 @@ $logo-width: 71px;
     @extend .sneakylink;
     padding: var(--u1);
     pointer-events: none;
+    font-variation-settings: 'wdth' 100;
+    transition: $transit-short;
     &:hover {
       font-variation-settings: 'wdth' 300;
-      transition: font-stretch $transit-short;
+      transition: $transit-short;
     }
   }
 }
@@ -92,7 +95,7 @@ $logo-width: 71px;
 
     // logo animates out
     .logo-left, .logo-right {
-      transition: transform $transit-short ease-in-out $transit-short;
+      transition: transform $transit-short ease-in-out 0.5s;
     }
     .logo-left {
       transform: translateX(-50vw);
@@ -108,10 +111,9 @@ $logo-width: 71px;
     // nav reveals itself
     .platformlinks {
       opacity: 1;
-      transition: opacity $transit-med ease-in-out $transit-short;
+      transition: opacity $transit-med ease-in-out 0.6s;
       a {
         pointer-events: auto;
-        transition: $transit-short;
       }
     }
   }

@@ -2,7 +2,9 @@
   margin: var(--u4) 0;
 }
 
+// --------------
 // Episode titles
+// --------------
 
 .episode-index {
   @extend .f-dsp;
@@ -20,14 +22,16 @@
   font-variation-settings: 'wdth' 350;
 }
 
+// ------
 // Player
+// ------
 
 $player-button-height: 63px;
 $player-playbutton-width: 72px;
 $player-pausebutton-width: 76px;
 
 .player {
-  margin: var(--u4) 0;
+  margin: var(--u4) 0 0;
 }
 
 .player-button {
@@ -115,24 +119,17 @@ $player-pausebutton-width: 76px;
   }
 }
 
+// ---------------
 // Episode details
+// ---------------
 
 .episode-details {
-  @extend .display;
-  @extend .regular;
-  @extend .f-med;
-
-  span, a {
-    display: inline-block;
-    margin-right: var(--u8);
-  }
-
-  a {
-    @extend .sneakylink;
-  }
-
-  a.active {
-    font-variation-settings: 'wdth' 500;
+  @extend .anchor;
+  & > span,
+  & > label {
+    @extend .display;
+    padding-top: var(--u2);
+    padding-bottom: var(--u2);
   }
 }
 
@@ -141,6 +138,68 @@ $player-pausebutton-width: 76px;
 .summary,
 .shownotes,
 .transcript {
-  margin: var(--u4) 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin: var(--u8) 0 var(--u4);
   max-width: $measure-width;
+  transform: translateY(calc( -1 * var(--u2)));
+  transition: opacity $transit-short, transform $transit-med;
 }
+
+// Hide/show behaviour
+
+.tab {
+  @extend .hidden;
+}
+
+.tab-label {
+  @extend .anchor;
+  display: inline-block;
+  padding-left: var(--u4);
+  padding-right: var(--u4);
+  width: calc( 20 * var(--u1) );
+  font-variation-settings: 'wdth' 100;
+  text-align: center;
+  transition: $transit-short;
+  &:hover {
+    cursor: pointer;
+    font-variation-settings: 'wdth' 500;
+    transition: $transit-short;
+  }
+}
+
+.tab#tab-summary:checked ~ label[for="tab-summary"],
+.tab#tab-shownotes:checked ~ label[for="tab-shownotes"], 
+.tab#tab-transcript:checked ~ label[for="tab-transcript"] {
+  font-variation-settings: 'wdth' 300;
+  transition: $transit-med;
+  &::before,&::after {
+    content: url(/images/chevron.svg);
+    color: inherit;
+    stroke: 1px;
+    position: absolute;
+    top: var(--u1);
+    opacity: 0.8;
+  }
+  &::before {
+    left: var(--u1);
+  }
+  &::after {
+    right: var(--u1);
+    transform: rotateY(180deg);
+  }
+}
+
+.tab#tab-summary:checked ~ .summary,
+.tab#tab-shownotes:checked ~ .shownotes, 
+.tab#tab-transcript:checked ~ .transcript {
+  opacity: 1;
+  transform: translateY(0);
+  height: initial;
+  overflow: initial;
+  transition: opacity $transit-short, transform $transit-med, height $transit-short;
+}
+

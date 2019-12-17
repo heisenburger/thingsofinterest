@@ -4,29 +4,8 @@
     <h1 class="episode-title">{{ page.title }}</h1>
   </header>
 
-  <div class="player anchor">
-    <button class="nbs player-button player-play" alt="Play">
-      {% include play.svg %}
-    </button>
-    <button class="nbs player-button player-pause" alt="Pause">
-      {% include pause.svg %}
-    </button>
-    <div class="player-time">
-      <span class="player-currenttime f-left t-cd">00:00:00</span> //
-      <span class="player-duration f-right t-cd">00:00:00</span>
-    </div>
-    <progress class="player-progress" value="0"></progress>
-    <audio id="player-audio" data-src={{ page.audiosrc }}></audio><!-- <a class="player-download" href={{ include.audio }} download>Download MP3</a> -->
-  </div>
+  {% include player.html %}
 
-  <nav class="episode-details">
-    <span>{{ page.date | date: "%-d %B %Y" }}</span>
-    <a href="" class="active">Summary</a>
-    <a href="" class="">Shownotes</a>
-    <a href="" class="">Transcript</a>
-  </nav>
-
-  <section class="summary">
-    {{ page.summary }}
-  </section>
+  {% include episode-details.html %}
+  
 </article>
