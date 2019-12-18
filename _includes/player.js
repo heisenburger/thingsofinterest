@@ -9,10 +9,7 @@
     var audio = player.querySelector('audio');
     var play = player.querySelector('.player-play');
     var pause = player.querySelector('.player-pause');
-    // var rewind = player.querySelector('.player-rewind');
     var progress = player.querySelector('.player-progress');
-    // var speed = player.querySelector('.player-speed');
-    // var mute = player.querySelector('.player-mute');
     var currentTime = player.querySelector('.player-currenttime');
     var duration = player.querySelector('.player-duration');
     
@@ -62,32 +59,9 @@
       underlay.className = "underlay off";
       document.body.className = "";
     }, false);
- 
-    // rewind.addEventListener('click', function(){
-    //   audio.currentTime -= 30;
-    // }, false);
     
     progress.addEventListener('click', function(e){
       audio.currentTime = Math.floor(audio.duration) * (e.offsetX / e.target.offsetWidth);
     }, false);
-
-    // speed.addEventListener('click', function(){
-    //   currentSpeedIdx = currentSpeedIdx + 1 < speeds.length ? currentSpeedIdx + 1 : 0;
-    //   audio.playbackRate = speeds[currentSpeedIdx];
-    //   this.textContent  = speeds[currentSpeedIdx] + 'x';
-    //   return true;
-    // }, false);
-
-    // mute.addEventListener('click', function() {
-    //   if(audio.muted) {
-    //     audio.muted = false;
-    //     this.querySelector('.fa').classList.remove('fa-volume-off');
-    //     this.querySelector('.fa').classList.add('fa-volume-up');
-    //   } else {
-    //     audio.muted = true;
-    //     this.querySelector('.fa').classList.remove('fa-volume-up');
-    //     this.querySelector('.fa').classList.add('fa-volume-off');
-    //   }
-    // }, false);
   }
 })(this);
