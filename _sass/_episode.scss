@@ -179,7 +179,6 @@ $player-pausebutton-width: 76px;
   @extend .wide2;
   transition: $transit-med;
   &::before,&::after {
-    content: url(/images/chevron.svg);
     color: inherit;
     stroke: 1px;
     position: absolute;
@@ -187,11 +186,14 @@ $player-pausebutton-width: 76px;
     opacity: 0.8;
   }
   &::before {
+    content: '⟨';
     left: var(--u1);
+    transform: scale(3,2.5);
   }
   &::after {
+    content: '⟩';
     right: var(--u1);
-    transform: rotateY(180deg);
+    transform: scale(3,2.5);
   }
 }
 

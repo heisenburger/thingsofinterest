@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+  {% for post in site.posts limit:1 %}
+    {% assign page = post %}
+  {% endfor %}
+
   {% include head.html %}
 
   <body class="">
