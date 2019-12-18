@@ -243,6 +243,45 @@ article {
       margin: var(--u2) 0;
     }
   }
+
+  blockquote {
+    @extend .anchor;
+    padding-left: var(--u2);
+    p:first-child {
+      margin-top: 0;
+    }
+    @include q($bp-med){
+      padding-left: var(--u4);
+    }
+    &::before {
+      content: '';
+      border-left: calc(0.5 * var(--u1)) solid var(--peach);
+      position: absolute;
+      height: 100%;
+      left: var(--u1);
+      @include q($bp-med){
+        left: var(--u2);
+      }
+    }
+  }
+
+  .serena, .sophia {
+    margin-top: var(--u2);
+    margin-bottom: var(--u1);
+  }
+
+  .sophia {
+    color: darken(#8BCFD2,20%);
+   & + blockquote::before {
+      border-left: calc(0.5 * var(--u1)) solid var(--teal);
+    }  
+  }
+  .serena {
+    color: var(--purple);
+    & + blockquote::before {
+      border-left: calc(0.5 * var(--u1)) solid var(--purple);
+    }
+  }
 }
 
 p {
