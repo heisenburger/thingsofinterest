@@ -34,6 +34,8 @@ $fontDisplay: auto;
 @include declare-bandeins(800, 400, BoldExtendedHalf);
 @include declare-bandeins(800, 800, BoldExtendedFull);
 
+/*
+
 // Inter Variable
 
 @mixin declare-inter($weight, $variantPath){
@@ -67,3 +69,5 @@ $fontDisplay: auto;
 @include declare-inter(700, Bold);
 @include declare-inter(800, ExtraBold);
 @include declare-inter(900, Black);
+
+*/
