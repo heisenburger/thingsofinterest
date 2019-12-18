@@ -284,6 +284,13 @@ article {
   }
 }
 
+.inverted .serena {
+  color: lighten(#9078A7,20%);
+}
+.inverted .sophia {
+  color: lighten(#8BCFD2,10%);
+}
+
 p {
   margin: var(--u2) 0;
 }
