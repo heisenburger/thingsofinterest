@@ -91,3 +91,12 @@
     // }, false);
   }
 })(this);
+
+function loadLarge(){
+  var underlay = document.getElementById('underlay');
+  var playerAudio = document.getElementById('player-audio');
+  underlay.setAttribute('style',underlay.getAttribute('data-src'));
+  playerAudio.setAttribute('src',playerAudio.getAttribute('data-src'));
+}
+
+window.onload = loadLarge;
