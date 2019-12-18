@@ -75,12 +75,14 @@ $player-pausebutton-width: 76px;
   }
 }
 
-.player-progress[value]::-webkit-progress-bar {
-  background-color: var(--teal);
+.player-progress[value]::-webkit-progress-bar,
+.player-progress[value]::progress-bar {
+  background-color: var(--purple);
 }
 
-.player-progress[value]::-webkit-progress-value {
-  background-color: var(--pink);
+.player-progress[value]::-webkit-progress-value
+.player-progress[value]::progress-value {
+  background-color: var(--teal);
 }
 
 // Background trigger
