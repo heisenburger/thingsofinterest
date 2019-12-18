@@ -61,13 +61,20 @@ $logo-width: 71px;
 
   ul {
     @extend .nls;
-    @extend .grid;
-    @include autogrid;
+    @include q($bp-sml){
+      display: grid;
+      @include autogrid;
+    }
   }
 
   li {
-    display: inline-block;
+    display: block;
     text-align: center;
+    padding: var(--u2);
+    @include q($bp-sml){
+      display: inline-block;
+      padding: 0;
+    }
   }
 
   a {
