@@ -1,6 +1,6 @@
 ---
 layout: episode
-title: "Chats with author and lawyer Erica Chan, Part 1"
+title: "Erica Chan, Part 1"
 date: 2018-08-21 01:00:00 +1200
 index: "042"
 audiosrc: "/episodes/toi_ep42-ericachan1.mp3"
@@ -17,15 +17,3 @@ length: "95513548"
 explicit: "no"
 block: "no" 
 ---
-<section class="summary" markdown="1">
-
-{{ page.summary }}
-
-</section>
-
-
-
-<section id="shownotes" class="hidden" markdown="1">
-
-
-</section>

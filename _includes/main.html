@@ -1,0 +1,41 @@
+{% include head.html %}
+
+<body class="">
+
+  <div id="underlay" class="underlay off"{% if page.bgsrc %} style="background-image:url({{ page.bgsrc }});"{% endif %}></div>
+
+  <div class="overlay">
+
+    <main class="screen-edge">
+
+      {% include logonav.html %}
+
+      {% include episode.html %}
+      
+      {{ content }}
+      
+    </main>
+
+    {% include hr.html direction="left" color=site.purple %}
+
+    <div id="intro" style="display: none;">
+    {% include about.html %}
+    </div>
+
+    <div id="alleps" style="display: none;">
+    {% include all-episodes.html %}
+    </div>
+
+    {% include hr.html direction="right" color=site.teal %}
+
+    {% include footer.html %}
+
+  </div>
+
+  <script type="text/javascript">
+    {% include visit.js %}
+    {% include player.js %}
+    {% include GA.js %}
+  </script>
+
+</body>

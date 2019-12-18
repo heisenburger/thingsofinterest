@@ -75,6 +75,11 @@ a.episode-row{
   &::before {
     background-color: var(--black);
   }
+  @include q($bp-med){
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .episode-index {

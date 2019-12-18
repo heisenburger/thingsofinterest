@@ -17,15 +17,3 @@ length: "134923401"
 explicit: "no"
 block: "no" 
 ---
-<section class="summary" markdown="1">
-
-{{ page.summary }}
-
-</section>
-
-
-
-<section id="shownotes" class="hidden" markdown="1">
-
-
-</section>

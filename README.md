@@ -18,6 +18,6 @@ I'm supposed to be packing and moving and writing a book chapter but I'm procras
 - [x] Contact us component
 - [x] All episodes component
 - [x] Footer links component
-- [ ] Check all episodes work
+- [x] Check all episodes work
 - [ ] Make the changes on index
 - [ ] PWA manifest.json stuff

@@ -5,43 +5,6 @@
     {% assign page = post %}
   {% endfor %}
 
-  {% include head.html %}
-
-  <body class="">
-
-    <div id="underlay" class="underlay off"{% if page.bgsrc %} style="background-image:url({{ page.bgsrc }});"{% endif %}></div>
-
-    <div class="overlay">
-
-      <main class="screen-edge">
-
-        {% include logonav.html %}
-
-        {% include episode.html %}
-        
-        {{ content }}
-        
-      </main>
-
-      {% include hr.html direction="left" color=site.purple %}
-
-      <!-- {% include about.html %} -->
-
-      {% include all-episodes.html %}
-
-      {% include hr.html direction="right" color=site.teal %}
-
-      {% include footer.html %}
-
-
-      {{ page.title }}
-    </div>
-
-    <script type="text/javascript">
-      {% include player.js %}
-      {% include GA.js %}
-    </script>
-
-  </body>
+  {% include main.html %}
 
 </html>
