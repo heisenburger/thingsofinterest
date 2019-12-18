@@ -277,7 +277,7 @@ article {
     }  
   }
   .serena {
-    color: var(--purple);
+    color: darken(#9078A7,10%);
     & + blockquote::before {
       border-left: calc(0.5 * var(--u1)) solid var(--purple);
     }

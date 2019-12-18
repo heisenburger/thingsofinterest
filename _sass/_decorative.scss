@@ -7,6 +7,12 @@ hr {
   background-color: currentColor;
 }
 
+hr:not([class]) {
+  width: 100%;
+  background-color: var(--peach);
+  margin: var(--u4) 0;
+}
+
 hr.rule-left {
   margin-left: 0;
   margin-right: auto;
