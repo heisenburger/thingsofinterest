@@ -199,7 +199,6 @@ h1, h2, h3, h4, blockquote,
 a {
   color: var(--black);
   background-color: transparent;
-  background-image: -webkit-linear-gradient(transparent -300%,currentColor 600%);
   background-image: linear-gradient(transparent -300%,currentColor 600%);
   text-decoration: none;
   background-repeat: no-repeat;
@@ -208,7 +207,7 @@ a {
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: black;
+    color: var(--purple);
   }
 }
 
@@ -230,7 +229,21 @@ a {
   background-image: none;
 }
 
-// Paragraph blocks
+// Normal text
+
+article {
+  h1,h2,h3,h4,h5,h6 {
+    @extend .display;
+    margin: var(--u4) 0 var(--u2);
+  }
+
+  ul {
+    margin-left: var(--u4);
+    li {
+      margin: var(--u2) 0;
+    }
+  }
+}
 
 p {
   margin: var(--u2) 0;
