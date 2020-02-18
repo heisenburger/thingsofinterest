@@ -5,7 +5,7 @@ description: >
   Things of Interest is hosted by Serena Chen and Sophia Frentz, and is a podcast that encompasses, in its purest form, things that we find interesting. 
   Our discussions often center around technological advancements and how they affect social issues. As two socially-conscious millennial nerds, who is better placed to talk about artificial intelligence, leadership, bitcoin, quantum computers, gene editing, and fandom? Probably no-one.
 baseurl: ""
-url: "https://thingsofinterest.co"
+url: "https://www.thingsofinterest.co"
 twitter_username: castinginterest
 github_username: heisenburger
 
@@ -23,8 +23,8 @@ teal: "8BCFD2"
 peach: "F7EADF"
 
 # Podcast General Settings
-podcastSite: https://thingsofinterest.co
-podcastCoverImg: https://thingsofinterest.co/images/toi-cover4.png
+podcastSite: https://www.thingsofinterest.co
+podcastCoverImg: https://www.thingsofinterest.co/images/toi-cover4.png
 podcastTitle: Things of Interest
 podcastOwner: "Serena Chen &amp; Sophia Frentz"
 podcastEmail: castinginterest@gmail.com
