@@ -99,12 +99,12 @@ $player-pausebutton-width: 76px;
 
 .off {
   opacity: 0;
-  transition: $transit-long;
+  transition: var(--transit-long);
 }
 
 .on {
   opacity: 0.4;
-  transition: $transit-long;
+  transition: var(--transit-long);
 }
 
 .overlay {
@@ -141,9 +141,9 @@ $player-pausebutton-width: 76px;
   height: 0;
   overflow: hidden;
   margin: 0;
-  max-width: $measure-width;
+  max-width: var(--measure-width);
   transform: translateY(calc( -1 * var(--u2)));
-  transition: opacity $transit-short, transform $transit-med;
+  transition: opacity var(--transit-short), transform var(--transit-med);
 }
 
 // Hide/show behaviour
@@ -159,11 +159,11 @@ $player-pausebutton-width: 76px;
   padding-right: var(--u2);
   font-variation-settings: var(--w0);
   text-align: center;
-  transition: $transit-short;
+  transition: var(--transit-short);
   &:hover {
     cursor: pointer;
     font-variation-settings: var(--w3);
-    transition: $transit-short;
+    transition: var(--transit-short);
   }
   @include q($bp-med){
     min-width: calc( 20 * var(--u1) );
@@ -179,7 +179,7 @@ $player-pausebutton-width: 76px;
 .tab#tab-shownotes:checked ~ label[for="tab-shownotes"], 
 .tab#tab-transcript:checked ~ label[for="tab-transcript"] {
   @extend .wide2;
-  transition: $transit-med;
+  transition: var(--transit-med);
   &::before,&::after {
     color: inherit;
     stroke: 1px;
@@ -207,6 +207,6 @@ $player-pausebutton-width: 76px;
   transform: translateY(0);
   height: initial;
   overflow: initial;
-  transition: opacity $transit-short, transform $transit-med, height $transit-short;
+  transition: opacity var(--transit-short), transform var(--transit-med), height var(--transit-short);
 }
 

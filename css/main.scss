@@ -6,14 +6,27 @@
 // Variables
 // ---------
 
+// Sass Variables
+
+// Breakpoints
+  $bp-sml:  480px;
+  $bp-med:  768px;
+  $bp-lrg: 1024px;
+  $bp-xlg: 1440px;
+  $bp-2xl: 2000px;
+  $bp-3xl: 2800px;
+
 // CSS Variables
 :root {
 
 // Fonts
   --ff-disp-sans: "Bandeins Strange", "Montserrat", sans-serif;
   --ff-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --ff-mono: "iA Writer Duospace", Consolas, Menlo, monospace;
+  --ff-mono: "iA Writer Duospace", "SF Pro", Consolas, Menlo, monospace;
+
 // Sizes
+
+  // Font sizes
   --f-xsm: 0.875rem; // 14px
   --f-sml:     1rem; // 16px
   --f-med:  1.25rem; // 20px
@@ -23,6 +36,15 @@
   --f-xdp:     5rem; // 80px
   --f-2xd:  6.25rem; // 100px
 
+  // Font weights
+  --w0: 'wdth' 100;
+  --w1: 'wdth' 200;
+  --w2: 'wdth' 350;
+  --w3: 'wdth' 500;
+  --w4: 'wdth' 750;
+  --w5: 'wdth' 800;
+
+  // Widths
   --u1:  0.625rem;   // 10px
   --u2:  calc(2 * var(--u1));
   --u4:  calc(4 * var(--u1));
@@ -35,12 +57,14 @@
   --u18: calc(14 * var(--u1));
   --u20: calc(20 * var(--u1));
 
-  --w0: 'wdth' 100;
-  --w1: 'wdth' 200;
-  --w2: 'wdth' 350;
-  --w3: 'wdth' 500;
-  --w4: 'wdth' 750;
-  --w5: 'wdth' 800;
+    // Semantic widths
+    --measure-width: 45em;
+
+// Duration
+  --transit-short: 0.1s;
+  --transit-med:   0.3s;
+  --transit-long:  1.0s;
+  --transit-xlong: 2.0s;
 
 // Colours
   --grey1: #333;
@@ -58,24 +82,6 @@
 // Easings
   --ease-way-out: cubic-bezier(0.000, 0.815, 1.000, 0.675);
 }
-
-// Sass variables
-
-// Breakpoints
-  $bp-sml:  480px;
-  $bp-med:  768px;
-  $bp-lrg: 1024px;
-  $bp-xlg: 1440px;
-  $bp-2xl: 2000px;
-  $bp-3xl: 2800px;
-
-// Widths
-  $measure-width: 45em;
-
-// Duration
-  $transit-short: 0.1s;
-  $transit-med: 0.3s;
-  $transit-long: 2s;
 
 // Helpers
 // -------

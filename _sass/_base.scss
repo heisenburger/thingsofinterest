@@ -32,13 +32,13 @@ body {
   position: relative;
   max-width: 100vw;
   overflow-x: hidden;
-  transition: background-color $transit-long;
+  transition: background-color var(--transit-long);
 }
 
 body.inverted {
   background-color: black;
   color: white;
-  transition: background-color $transit-long;
+  transition: background-color var(--transit-long);
 }
 
 .hidden {

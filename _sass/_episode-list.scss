@@ -53,7 +53,7 @@ a.episode-row{
     z-index: -1;
     background-color: var(--peach);
     opacity: 0;
-    transition: opacity $transit-short;
+    transition: opacity var(--transit-short);
   }
   // only give hover effects on larger screens
   @include q($bp-med){
@@ -61,11 +61,11 @@ a.episode-row{
       color: black;
       .episode-name {
         font-variation-settings: var(--w3);
-        transition: $transit-med ease-in 1s;
+        transition: var(--transit-med) ease-in 500ms;
       }
       &::before {
         opacity: 1;
-        transition: opacity $transit-long var(--ease-way-out);
+        transition: opacity var(--transit-long) var(--ease-way-out);
       }
     }
   }

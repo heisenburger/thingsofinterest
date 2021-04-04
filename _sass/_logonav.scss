@@ -28,7 +28,7 @@ $logo-width: 71px;
     text-transform: lowercase;
     font-variation-settings: var(--w0);
     text-align: center;
-    transition: $transit-med;
+    transition: var(--transit-med);
     a {
       @extend .sneakylink;
     }
@@ -47,7 +47,7 @@ $logo-width: 71px;
   }
 
   .logo-left, .logo-right {
-    transition: transform $transit-med ease-in-out $transit-short;
+    transition: transform var(--transit-med) ease-in-out var(--transit-short);
   }
 
 // Platform links
@@ -81,10 +81,10 @@ $logo-width: 71px;
     @extend .sneakylink;
     padding: var(--u1);
     font-variation-settings: var(--w0);
-    transition: $transit-short;
+    transition: var(--transit-short);
     &:hover {
       font-variation-settings: var(--w2);
-      transition: $transit-short;
+      transition: var(--transit-short);
     }
   }
 }
@@ -94,7 +94,7 @@ $logo-width: 71px;
     position: relative;
     top: calc(-7.75 * var(--u1));
     opacity: 0;
-    transition: opacity $transit-med ease-in-out $transit-short;
+    transition: opacity var(--transit-med) ease-in-out var(--transit-short);
 
     ul {
       margin-top: calc((#{$logo-height} - 2*var(--f-med)));
@@ -113,7 +113,7 @@ $logo-width: 71px;
 
     // logo animates out
     .logo-left, .logo-right {
-      transition: transform $transit-short ease-in-out 0.5s;
+      transition: transform var(--transit-short) ease-in-out 0.5s;
     }
     .logo-left {
       transform: translateX(-50vw);
@@ -123,13 +123,13 @@ $logo-width: 71px;
     }
     .logo-text {
       font-variation-settings: var(--w4);
-      transition: $transit-short;
+      transition: var(--transit-short);
     }
 
     // nav reveals itself
     .platformlinks {
       opacity: 1;
-      transition: opacity $transit-med ease-in-out 0.6s;
+      transition: opacity var(--transit-med) ease-in-out 0.6s;
       a {
         pointer-events: auto;
       }
