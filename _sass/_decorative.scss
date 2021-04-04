@@ -102,7 +102,7 @@ footer {
 #footer-nav {
   float: none;
   padding-top: var(--u2);
-  @extend .wide3;
+  font-variation-settings: var(--w1);
   a {
     @extend .sneakylink;
     margin-right: var(--u2);
@@ -110,6 +110,7 @@ footer {
   @include q($bp-med){
     float: right;
     padding-top: 0;
+    font-variation-settings: var(--w2);
     a {
       margin-left: var(--u4);
     }

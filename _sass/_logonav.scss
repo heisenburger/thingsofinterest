@@ -89,19 +89,23 @@ $logo-width: 71px;
   }
 }
 
-.logonav{
+.logonav {
   .platformlinks {
-    position: relative;
-    top: calc(-7.75 * var(--u1));
-    opacity: 0;
-    transition: opacity var(--transit-med) ease-in-out var(--transit-short);
+    display: none;
+    @include q($bp-med){
+      display: block;
+      position: relative;
+      top: calc(-7.75 * var(--u1));
+      opacity: 0;
+      transition: opacity var(--transit-med) ease-in-out var(--transit-short);
 
-    ul {
-      margin-top: calc((#{$logo-height} - 2*var(--f-med)));
-    }
+      ul {
+        margin-top: calc((#{$logo-height} - 2*var(--f-med)));
+      }
 
-    a {
-      pointer-events: none;
+      a {
+        pointer-events: none;
+      }
     }
   }
 }
