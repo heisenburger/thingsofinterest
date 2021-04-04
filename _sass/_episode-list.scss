@@ -57,11 +57,14 @@ a.episode-row{
   }
   // only give hover effects on larger screens
   @include q($bp-med){
+    .episode-name {
+      transition: var(--transit-med) ease-in 0ms;
+    }
     &:hover {
       color: black;
       .episode-name {
-        font-variation-settings: var(--w3);
-        transition: var(--transit-med) ease-in 500ms;
+        font-variation-settings: var(--w1);
+        transition: var(--transit-short) ease-in 0ms;
       }
       &::before {
         opacity: 1;

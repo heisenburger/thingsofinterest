@@ -1,0 +1,31 @@
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes expand {
+  0% { font-variation-settings: var(--w1); }
+  100% { font-variation-settings: var(--w4); }
+}
+
+@keyframes bounce {
+  0% { font-variation-settings: var(--w2); }
+  10% { font-variation-settings: var(--w4); }
+  100% { font-variation-settings: var(--w2); }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-out;
+}
+
+.fade-in-delay {
+  animation: fade-in 500ms ease-out 1.5s both;
+}
+
+.expand-once-slow {
+  animation: expand 2s ease-in 1 forwards;
+}
+
+.bounce-once-slow {
+  animation: bounce 2s ease-in-out 1 forwards;
+}
